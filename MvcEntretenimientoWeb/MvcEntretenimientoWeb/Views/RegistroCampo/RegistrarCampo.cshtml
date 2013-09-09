@@ -1,0 +1,174 @@
+﻿@model MvcEntretenimientoWeb.Models.UsersContext
+
+@{
+    ViewBag.Title = "RegistrarCampo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div id="ContentRegion" class="container-fluid text-left">
+        -- Registro de Campo --
+
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Fecha:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+                        <input type="text" id="txtfecha" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span4">
+                <label class="control-label" style="max-height: 200px;">
+                    <label>Lugar:</label>
+                </label>
+                <div class="controls" style="max-height: 200px;">
+                    <input type="text" id="txtLugar" placeholder="Ingrese Lugar" />
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Numero de Personas:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+
+                        <input type="text" id="txtnropersonas" placeholder="Ingrese Numero de Personas" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="ServicioContent" class="container-fluid text-left">
+        -- Registro de Servicio --
+
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Servicio:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+                        <select id="ddlservicio">
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span4">
+                <label class="control-label" style="max-height: 200px;">
+                    <label>Numero de Personas:</label>
+                </label>
+                <div class="controls" style="max-height: 200px;">
+                    <input type="text" id="txtpersonasservicio" placeholder="Ingrese Numero de Personas"/>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Description:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+
+                        <input type="text" id="txtdescription" placeholder="Ingrese Descripcion" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+     <div id="JuegosContent" class="container-fluid text-left">
+        -- Juegos --
+
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Juego:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+                        <select id="ddljuego">
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span4">
+                <label class="control-label" style="max-height: 200px;">
+                    <label>Numero de Personas:</label>
+                </label>
+                <div class="controls" style="max-height: 200px;">
+                    <input type="text" id="txtpersonasjuegos" placeholder="Ingrese Numero de personas"/>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="control-group">
+                    <label class="control-label" style="max-height: 200px;">
+                        <label>Description:</label>
+                    </label>
+                    <div class="controls ctlreq" style="max-height: 200px;">
+
+                        <input type="text" id="txtdesjuegos" placeholder="Ingrese Descripcion" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+<script>
+
+    $(document).ready(function () {
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("GetServicios", "RegistroCampo")',
+    
+    success: function (data) {
+        $.each(data, function (i, value) {
+            $('#ddlservicio').append($('<option>').text(value.CoServicio).attr('value', value.TxtDescripcion));
+        });
+    },
+    dataType: 'json',
+    contentType: 'application/json, charset=utf-8',
+        });
+    });
+</script>
+}
+

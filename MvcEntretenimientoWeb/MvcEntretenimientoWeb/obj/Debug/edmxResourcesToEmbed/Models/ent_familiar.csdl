@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ent_familiarModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ent_familiarEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="catalogo" EntityType="ent_familiarModel.catalogo" />
+    <EntitySet Name="club" EntityType="ent_familiarModel.club" />
+    <EntitySet Name="detalle_dia_campo" EntityType="ent_familiarModel.detalle_dia_campo" />
+    <EntitySet Name="detalleoferta" EntityType="ent_familiarModel.detalleoferta" />
+    <EntitySet Name="juego" EntityType="ent_familiarModel.juego" />
+    <EntitySet Name="master_catalogo" EntityType="ent_familiarModel.master_catalogo" />
+    <EntitySet Name="material" EntityType="ent_familiarModel.material" />
+    <EntitySet Name="oferta" EntityType="ent_familiarModel.oferta" />
+    <EntitySet Name="responsable_familia" EntityType="ent_familiarModel.responsable_familia" />
+    <EntitySet Name="servicio" EntityType="ent_familiarModel.servicio" />
+    <EntitySet Name="solicitud_dia_campo" EntityType="ent_familiarModel.solicitud_dia_campo" />
+    <EntitySet Name="usuario" EntityType="ent_familiarModel.usuario" />
+    <AssociationSet Name="fk_catalogo_master_catalogo1" Association="ent_familiarModel.fk_catalogo_master_catalogo1">
+      <End Role="master_catalogo" EntitySet="master_catalogo" />
+      <End Role="catalogo" EntitySet="catalogo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitud_dia_campo_club1" Association="ent_familiarModel.fk_solicitud_dia_campo_club1">
+      <End Role="club" EntitySet="club" />
+      <End Role="solicitud_dia_campo" EntitySet="solicitud_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalle_dia_campo_juego1" Association="ent_familiarModel.fk_detalle_dia_campo_juego1">
+      <End Role="juego" EntitySet="juego" />
+      <End Role="detalle_dia_campo" EntitySet="detalle_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalle_dia_campo_servicio1" Association="ent_familiarModel.fk_detalle_dia_campo_servicio1">
+      <End Role="servicio" EntitySet="servicio" />
+      <End Role="detalle_dia_campo" EntitySet="detalle_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalle_dia_campo_solicitud_dia_campo1" Association="ent_familiarModel.fk_detalle_dia_campo_solicitud_dia_campo1">
+      <End Role="solicitud_dia_campo" EntitySet="solicitud_dia_campo" />
+      <End Role="detalle_dia_campo" EntitySet="detalle_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalleoferta_oferta1" Association="ent_familiarModel.fk_detalleoferta_oferta1">
+      <End Role="oferta" EntitySet="oferta" />
+      <End Role="detalleoferta" EntitySet="detalleoferta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalleoferta_responsable_familia1" Association="ent_familiarModel.fk_detalleoferta_responsable_familia1">
+      <End Role="responsable_familia" EntitySet="responsable_familia" />
+      <End Role="detalleoferta" EntitySet="detalleoferta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalleoferta_usuario1" Association="ent_familiarModel.fk_detalleoferta_usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="detalleoferta" EntitySet="detalleoferta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitud_dia_campo_oferta1" Association="ent_familiarModel.fk_solicitud_dia_campo_oferta1">
+      <End Role="oferta" EntitySet="oferta" />
+      <End Role="solicitud_dia_campo" EntitySet="solicitud_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_responsable_familia_usuario1" Association="ent_familiarModel.fk_responsable_familia_usuario1">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="responsable_familia" EntitySet="responsable_familia" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitud_dia_campo_responsable_familia1" Association="ent_familiarModel.fk_solicitud_dia_campo_responsable_familia1">
+      <End Role="responsable_familia" EntitySet="responsable_familia" />
+      <End Role="solicitud_dia_campo" EntitySet="solicitud_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitud_dia_campo_usuario" Association="ent_familiarModel.fk_solicitud_dia_campo_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="solicitud_dia_campo" EntitySet="solicitud_dia_campo" />
+    </AssociationSet>
+    <AssociationSet Name="juego_material" Association="ent_familiarModel.juego_material">
+      <End Role="juego" EntitySet="juego" />
+      <End Role="material" EntitySet="material" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="catalogo">
+    <Key>
+      <PropertyRef Name="CoCtl" />
+      <PropertyRef Name="CoSubCtl" />
+    </Key>
+    <Property Name="CoCtl" Type="Int64" Nullable="false" />
+    <Property Name="CoSubCtl" Type="Int32" Nullable="false" />
+    <Property Name="NoDescripcion" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="master_catalogo" Relationship="ent_familiarModel.fk_catalogo_master_catalogo1" FromRole="catalogo" ToRole="master_catalogo" />
+  </EntityType>
+  <EntityType Name="club">
+    <Key>
+      <PropertyRef Name="CoClub" />
+    </Key>
+    <Property Name="CoClub" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoClub" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="NoDireccion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="solicitud_dia_campo" Relationship="ent_familiarModel.fk_solicitud_dia_campo_club1" FromRole="club" ToRole="solicitud_dia_campo" />
+  </EntityType>
+  <EntityType Name="detalle_dia_campo">
+    <Key>
+      <PropertyRef Name="CoDiaCampo" />
+      <PropertyRef Name="CoResponsable" />
+      <PropertyRef Name="NuSecuencia" />
+    </Key>
+    <Property Name="CoDiaCampo" Type="Int64" Nullable="false" />
+    <Property Name="CoResponsable" Type="Int64" Nullable="false" />
+    <Property Name="NuSecuencia" Type="Int32" Nullable="false" />
+    <Property Name="NuPersonas" Type="Int32" />
+    <Property Name="SsPrecioPersona" Type="Decimal" />
+    <Property Name="SsImporte" Type="Decimal" />
+    <Property Name="TxtComentario" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CoServicio" Type="Int64" Nullable="false" />
+    <Property Name="CoJuego" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="juego" Relationship="ent_familiarModel.fk_detalle_dia_campo_juego1" FromRole="detalle_dia_campo" ToRole="juego" />
+    <NavigationProperty Name="servicio" Relationship="ent_familiarModel.fk_detalle_dia_campo_servicio1" FromRole="detalle_dia_campo" ToRole="servicio" />
+    <NavigationProperty Name="solicitud_dia_campo" Relationship="ent_familiarModel.fk_detalle_dia_campo_solicitud_dia_campo1" FromRole="detalle_dia_campo" ToRole="solicitud_dia_campo" />
+  </EntityType>
+  <EntityType Name="detalleoferta">
+    <Key>
+      <PropertyRef Name="CoOferta" />
+      <PropertyRef Name="NuSecuencia" />
+    </Key>
+    <Property Name="CoOferta" Type="Int64" Nullable="false" />
+    <Property Name="NuSecuencia" Type="Int32" Nullable="false" />
+    <Property Name="FeConsulta" Type="DateTime" />
+    <Property Name="TxtConsulta" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="TxtRespuesta" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CoResponsable" Type="Int64" Nullable="false" />
+    <Property Name="CoUsuarioAdmin" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="oferta" Relationship="ent_familiarModel.fk_detalleoferta_oferta1" FromRole="detalleoferta" ToRole="oferta" />
+    <NavigationProperty Name="responsable_familia" Relationship="ent_familiarModel.fk_detalleoferta_responsable_familia1" FromRole="detalleoferta" ToRole="responsable_familia" />
+    <NavigationProperty Name="usuario" Relationship="ent_familiarModel.fk_detalleoferta_usuario1" FromRole="detalleoferta" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="juego">
+    <Key>
+      <PropertyRef Name="CoJuego" />
+    </Key>
+    <Property Name="CoJuego" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoJuego" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="TxtDescripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="TxtImagen" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="SsPrecio" Type="Decimal" />
+    <Property Name="FlEstado" Type="Int32" />
+    <NavigationProperty Name="detalle_dia_campo" Relationship="ent_familiarModel.fk_detalle_dia_campo_juego1" FromRole="juego" ToRole="detalle_dia_campo" />
+    <NavigationProperty Name="material" Relationship="ent_familiarModel.juego_material" FromRole="juego" ToRole="material" />
+  </EntityType>
+  <EntityType Name="master_catalogo">
+    <Key>
+      <PropertyRef Name="CoCtl" />
+    </Key>
+    <Property Name="CoCtl" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoDescripcion" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="catalogo" Relationship="ent_familiarModel.fk_catalogo_master_catalogo1" FromRole="master_catalogo" ToRole="catalogo" />
+  </EntityType>
+  <EntityType Name="material">
+    <Key>
+      <PropertyRef Name="CoMaterial" />
+    </Key>
+    <Property Name="CoMaterial" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoMaterial" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="juego" Relationship="ent_familiarModel.juego_material" FromRole="material" ToRole="juego" />
+  </EntityType>
+  <EntityType Name="oferta">
+    <Key>
+      <PropertyRef Name="CoOferta" />
+    </Key>
+    <Property Name="CoOferta" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoOferta" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="FeInicio" Type="DateTime" />
+    <Property Name="FeCaducidad" Type="DateTime" />
+    <Property Name="TxtDescripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CoUbicacion" Type="Int32" />
+    <Property Name="FlEstado" Type="Int32" />
+    <NavigationProperty Name="detalleoferta" Relationship="ent_familiarModel.fk_detalleoferta_oferta1" FromRole="oferta" ToRole="detalleoferta" />
+    <NavigationProperty Name="solicitud_dia_campo" Relationship="ent_familiarModel.fk_solicitud_dia_campo_oferta1" FromRole="oferta" ToRole="solicitud_dia_campo" />
+  </EntityType>
+  <EntityType Name="responsable_familia">
+    <Key>
+      <PropertyRef Name="CoResponsable" />
+    </Key>
+    <Property Name="CoResponsable" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoNombres" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="NoApePaterno" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="NoApeMaterno" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="FlSexo" Type="Int32" />
+    <Property Name="CoTipoDocumento" Type="Int32" />
+    <Property Name="NuDocumento" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NoDireccion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="NuCelular" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="FlEstado" Type="Int32" />
+    <Property Name="CoUsuario" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="detalleoferta" Relationship="ent_familiarModel.fk_detalleoferta_responsable_familia1" FromRole="responsable_familia" ToRole="detalleoferta" />
+    <NavigationProperty Name="usuario" Relationship="ent_familiarModel.fk_responsable_familia_usuario1" FromRole="responsable_familia" ToRole="usuario" />
+    <NavigationProperty Name="solicitud_dia_campo" Relationship="ent_familiarModel.fk_solicitud_dia_campo_responsable_familia1" FromRole="responsable_familia" ToRole="solicitud_dia_campo" />
+  </EntityType>
+  <EntityType Name="servicio">
+    <Key>
+      <PropertyRef Name="CoServicio" />
+    </Key>
+    <Property Name="CoServicio" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoServicio" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="TxtDescripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="SsPrecio" Type="Decimal" />
+    <Property Name="FlEstado" Type="Int32" />
+    <NavigationProperty Name="detalle_dia_campo" Relationship="ent_familiarModel.fk_detalle_dia_campo_servicio1" FromRole="servicio" ToRole="detalle_dia_campo" />
+  </EntityType>
+  <EntityType Name="solicitud_dia_campo">
+    <Key>
+      <PropertyRef Name="CoDiaCampo" />
+      <PropertyRef Name="CoResponsable" />
+    </Key>
+    <Property Name="CoDiaCampo" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CoResponsable" Type="Int64" Nullable="false" />
+    <Property Name="FeDiaCampo" Type="DateTime" />
+    <Property Name="NuTotalPersonas" Type="Int32" />
+    <Property Name="SsImporteTotal" Type="Decimal" />
+    <Property Name="FlAprobado" Type="Int32" />
+    <Property Name="FeAprobado" Type="DateTime" />
+    <Property Name="CoUsuarioAdmin" Type="Int64" />
+    <Property Name="CoClub" Type="Int64" Nullable="false" />
+    <Property Name="CoOferta" Type="Int64" />
+    <NavigationProperty Name="club" Relationship="ent_familiarModel.fk_solicitud_dia_campo_club1" FromRole="solicitud_dia_campo" ToRole="club" />
+    <NavigationProperty Name="detalle_dia_campo" Relationship="ent_familiarModel.fk_detalle_dia_campo_solicitud_dia_campo1" FromRole="solicitud_dia_campo" ToRole="detalle_dia_campo" />
+    <NavigationProperty Name="oferta" Relationship="ent_familiarModel.fk_solicitud_dia_campo_oferta1" FromRole="solicitud_dia_campo" ToRole="oferta" />
+    <NavigationProperty Name="responsable_familia" Relationship="ent_familiarModel.fk_solicitud_dia_campo_responsable_familia1" FromRole="solicitud_dia_campo" ToRole="responsable_familia" />
+    <NavigationProperty Name="usuario" Relationship="ent_familiarModel.fk_solicitud_dia_campo_usuario" FromRole="solicitud_dia_campo" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="CoUsuario" />
+    </Key>
+    <Property Name="CoUsuario" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CoTipoUsuario" Type="Int32" />
+    <Property Name="NoEmail" Type="String" MaxLength="160" Unicode="false" FixedLength="false" />
+    <Property Name="FlEstado" Type="Int32" />
+    <Property Name="NoContrasena" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="detalleoferta" Relationship="ent_familiarModel.fk_detalleoferta_usuario1" FromRole="usuario" ToRole="detalleoferta" />
+    <NavigationProperty Name="responsable_familia" Relationship="ent_familiarModel.fk_responsable_familia_usuario1" FromRole="usuario" ToRole="responsable_familia" />
+    <NavigationProperty Name="solicitud_dia_campo" Relationship="ent_familiarModel.fk_solicitud_dia_campo_usuario" FromRole="usuario" ToRole="solicitud_dia_campo" />
+  </EntityType>
+  <Association Name="fk_catalogo_master_catalogo1">
+    <End Role="master_catalogo" Type="ent_familiarModel.master_catalogo" Multiplicity="1" />
+    <End Role="catalogo" Type="ent_familiarModel.catalogo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="master_catalogo">
+        <PropertyRef Name="CoCtl" />
+      </Principal>
+      <Dependent Role="catalogo">
+        <PropertyRef Name="CoCtl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitud_dia_campo_club1">
+    <End Role="club" Type="ent_familiarModel.club" Multiplicity="1" />
+    <End Role="solicitud_dia_campo" Type="ent_familiarModel.solicitud_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="club">
+        <PropertyRef Name="CoClub" />
+      </Principal>
+      <Dependent Role="solicitud_dia_campo">
+        <PropertyRef Name="CoClub" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalle_dia_campo_juego1">
+    <End Role="juego" Type="ent_familiarModel.juego" Multiplicity="1" />
+    <End Role="detalle_dia_campo" Type="ent_familiarModel.detalle_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="juego">
+        <PropertyRef Name="CoJuego" />
+      </Principal>
+      <Dependent Role="detalle_dia_campo">
+        <PropertyRef Name="CoJuego" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalle_dia_campo_servicio1">
+    <End Role="servicio" Type="ent_familiarModel.servicio" Multiplicity="1" />
+    <End Role="detalle_dia_campo" Type="ent_familiarModel.detalle_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicio">
+        <PropertyRef Name="CoServicio" />
+      </Principal>
+      <Dependent Role="detalle_dia_campo">
+        <PropertyRef Name="CoServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalle_dia_campo_solicitud_dia_campo1">
+    <End Role="solicitud_dia_campo" Type="ent_familiarModel.solicitud_dia_campo" Multiplicity="1" />
+    <End Role="detalle_dia_campo" Type="ent_familiarModel.detalle_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="solicitud_dia_campo">
+        <PropertyRef Name="CoDiaCampo" />
+        <PropertyRef Name="CoResponsable" />
+      </Principal>
+      <Dependent Role="detalle_dia_campo">
+        <PropertyRef Name="CoDiaCampo" />
+        <PropertyRef Name="CoResponsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalleoferta_oferta1">
+    <End Role="oferta" Type="ent_familiarModel.oferta" Multiplicity="1" />
+    <End Role="detalleoferta" Type="ent_familiarModel.detalleoferta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="oferta">
+        <PropertyRef Name="CoOferta" />
+      </Principal>
+      <Dependent Role="detalleoferta">
+        <PropertyRef Name="CoOferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalleoferta_responsable_familia1">
+    <End Role="responsable_familia" Type="ent_familiarModel.responsable_familia" Multiplicity="1" />
+    <End Role="detalleoferta" Type="ent_familiarModel.detalleoferta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="responsable_familia">
+        <PropertyRef Name="CoResponsable" />
+      </Principal>
+      <Dependent Role="detalleoferta">
+        <PropertyRef Name="CoResponsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalleoferta_usuario1">
+    <End Role="usuario" Type="ent_familiarModel.usuario" Multiplicity="1" />
+    <End Role="detalleoferta" Type="ent_familiarModel.detalleoferta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="CoUsuario" />
+      </Principal>
+      <Dependent Role="detalleoferta">
+        <PropertyRef Name="CoUsuarioAdmin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitud_dia_campo_oferta1">
+    <End Role="oferta" Type="ent_familiarModel.oferta" Multiplicity="0..1" />
+    <End Role="solicitud_dia_campo" Type="ent_familiarModel.solicitud_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="oferta">
+        <PropertyRef Name="CoOferta" />
+      </Principal>
+      <Dependent Role="solicitud_dia_campo">
+        <PropertyRef Name="CoOferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_responsable_familia_usuario1">
+    <End Role="usuario" Type="ent_familiarModel.usuario" Multiplicity="1" />
+    <End Role="responsable_familia" Type="ent_familiarModel.responsable_familia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="CoUsuario" />
+      </Principal>
+      <Dependent Role="responsable_familia">
+        <PropertyRef Name="CoUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitud_dia_campo_responsable_familia1">
+    <End Role="responsable_familia" Type="ent_familiarModel.responsable_familia" Multiplicity="1" />
+    <End Role="solicitud_dia_campo" Type="ent_familiarModel.solicitud_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="responsable_familia">
+        <PropertyRef Name="CoResponsable" />
+      </Principal>
+      <Dependent Role="solicitud_dia_campo">
+        <PropertyRef Name="CoResponsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitud_dia_campo_usuario">
+    <End Role="usuario" Type="ent_familiarModel.usuario" Multiplicity="0..1" />
+    <End Role="solicitud_dia_campo" Type="ent_familiarModel.solicitud_dia_campo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="CoUsuario" />
+      </Principal>
+      <Dependent Role="solicitud_dia_campo">
+        <PropertyRef Name="CoUsuarioAdmin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="juego_material">
+    <End Role="juego" Type="ent_familiarModel.juego" Multiplicity="*" />
+    <End Role="material" Type="ent_familiarModel.material" Multiplicity="*" />
+  </Association>
+</Schema>

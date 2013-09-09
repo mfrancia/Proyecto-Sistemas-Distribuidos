@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ent_familiarModelStoreContainer" CdmEntityContainer="ent_familiarEntities">
+    <EntitySetMapping Name="catalogo">
+      <EntityTypeMapping TypeName="ent_familiarModel.catalogo">
+        <MappingFragment StoreEntitySet="catalogo">
+          <ScalarProperty Name="CoCtl" ColumnName="CoCtl" />
+          <ScalarProperty Name="CoSubCtl" ColumnName="CoSubCtl" />
+          <ScalarProperty Name="NoDescripcion" ColumnName="NoDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="club">
+      <EntityTypeMapping TypeName="ent_familiarModel.club">
+        <MappingFragment StoreEntitySet="club">
+          <ScalarProperty Name="CoClub" ColumnName="CoClub" />
+          <ScalarProperty Name="NoClub" ColumnName="NoClub" />
+          <ScalarProperty Name="NoDireccion" ColumnName="NoDireccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_dia_campo">
+      <EntityTypeMapping TypeName="ent_familiarModel.detalle_dia_campo">
+        <MappingFragment StoreEntitySet="detalle_dia_campo">
+          <ScalarProperty Name="CoDiaCampo" ColumnName="CoDiaCampo" />
+          <ScalarProperty Name="CoResponsable" ColumnName="CoResponsable" />
+          <ScalarProperty Name="NuSecuencia" ColumnName="NuSecuencia" />
+          <ScalarProperty Name="NuPersonas" ColumnName="NuPersonas" />
+          <ScalarProperty Name="SsPrecioPersona" ColumnName="SsPrecioPersona" />
+          <ScalarProperty Name="SsImporte" ColumnName="SsImporte" />
+          <ScalarProperty Name="TxtComentario" ColumnName="TxtComentario" />
+          <ScalarProperty Name="CoServicio" ColumnName="CoServicio" />
+          <ScalarProperty Name="CoJuego" ColumnName="CoJuego" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalleoferta">
+      <EntityTypeMapping TypeName="ent_familiarModel.detalleoferta">
+        <MappingFragment StoreEntitySet="detalleoferta">
+          <ScalarProperty Name="CoOferta" ColumnName="CoOferta" />
+          <ScalarProperty Name="NuSecuencia" ColumnName="NuSecuencia" />
+          <ScalarProperty Name="FeConsulta" ColumnName="FeConsulta" />
+          <ScalarProperty Name="TxtConsulta" ColumnName="TxtConsulta" />
+          <ScalarProperty Name="TxtRespuesta" ColumnName="TxtRespuesta" />
+          <ScalarProperty Name="CoResponsable" ColumnName="CoResponsable" />
+          <ScalarProperty Name="CoUsuarioAdmin" ColumnName="CoUsuarioAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="juego">
+      <EntityTypeMapping TypeName="ent_familiarModel.juego">
+        <MappingFragment StoreEntitySet="juego">
+          <ScalarProperty Name="CoJuego" ColumnName="CoJuego" />
+          <ScalarProperty Name="NoJuego" ColumnName="NoJuego" />
+          <ScalarProperty Name="TxtDescripcion" ColumnName="TxtDescripcion" />
+          <ScalarProperty Name="TxtImagen" ColumnName="TxtImagen" />
+          <ScalarProperty Name="SsPrecio" ColumnName="SsPrecio" />
+          <ScalarProperty Name="FlEstado" ColumnName="FlEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="master_catalogo">
+      <EntityTypeMapping TypeName="ent_familiarModel.master_catalogo">
+        <MappingFragment StoreEntitySet="master_catalogo">
+          <ScalarProperty Name="CoCtl" ColumnName="CoCtl" />
+          <ScalarProperty Name="NoDescripcion" ColumnName="NoDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="material">
+      <EntityTypeMapping TypeName="ent_familiarModel.material">
+        <MappingFragment StoreEntitySet="material">
+          <ScalarProperty Name="CoMaterial" ColumnName="CoMaterial" />
+          <ScalarProperty Name="NoMaterial" ColumnName="NoMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oferta">
+      <EntityTypeMapping TypeName="ent_familiarModel.oferta">
+        <MappingFragment StoreEntitySet="oferta">
+          <ScalarProperty Name="CoOferta" ColumnName="CoOferta" />
+          <ScalarProperty Name="NoOferta" ColumnName="NoOferta" />
+          <ScalarProperty Name="FeInicio" ColumnName="FeInicio" />
+          <ScalarProperty Name="FeCaducidad" ColumnName="FeCaducidad" />
+          <ScalarProperty Name="TxtDescripcion" ColumnName="TxtDescripcion" />
+          <ScalarProperty Name="CoUbicacion" ColumnName="CoUbicacion" />
+          <ScalarProperty Name="FlEstado" ColumnName="FlEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="responsable_familia">
+      <EntityTypeMapping TypeName="ent_familiarModel.responsable_familia">
+        <MappingFragment StoreEntitySet="responsable_familia">
+          <ScalarProperty Name="CoResponsable" ColumnName="CoResponsable" />
+          <ScalarProperty Name="NoNombres" ColumnName="NoNombres" />
+          <ScalarProperty Name="NoApePaterno" ColumnName="NoApePaterno" />
+          <ScalarProperty Name="NoApeMaterno" ColumnName="NoApeMaterno" />
+          <ScalarProperty Name="FlSexo" ColumnName="FlSexo" />
+          <ScalarProperty Name="CoTipoDocumento" ColumnName="CoTipoDocumento" />
+          <ScalarProperty Name="NuDocumento" ColumnName="NuDocumento" />
+          <ScalarProperty Name="NoDireccion" ColumnName="NoDireccion" />
+          <ScalarProperty Name="NuCelular" ColumnName="NuCelular" />
+          <ScalarProperty Name="FlEstado" ColumnName="FlEstado" />
+          <ScalarProperty Name="CoUsuario" ColumnName="CoUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servicio">
+      <EntityTypeMapping TypeName="ent_familiarModel.servicio">
+        <MappingFragment StoreEntitySet="servicio">
+          <ScalarProperty Name="CoServicio" ColumnName="CoServicio" />
+          <ScalarProperty Name="NoServicio" ColumnName="NoServicio" />
+          <ScalarProperty Name="TxtDescripcion" ColumnName="TxtDescripcion" />
+          <ScalarProperty Name="SsPrecio" ColumnName="SsPrecio" />
+          <ScalarProperty Name="FlEstado" ColumnName="FlEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="solicitud_dia_campo">
+      <EntityTypeMapping TypeName="ent_familiarModel.solicitud_dia_campo">
+        <MappingFragment StoreEntitySet="solicitud_dia_campo">
+          <ScalarProperty Name="CoDiaCampo" ColumnName="CoDiaCampo" />
+          <ScalarProperty Name="CoResponsable" ColumnName="CoResponsable" />
+          <ScalarProperty Name="FeDiaCampo" ColumnName="FeDiaCampo" />
+          <ScalarProperty Name="NuTotalPersonas" ColumnName="NuTotalPersonas" />
+          <ScalarProperty Name="SsImporteTotal" ColumnName="SsImporteTotal" />
+          <ScalarProperty Name="FlAprobado" ColumnName="FlAprobado" />
+          <ScalarProperty Name="FeAprobado" ColumnName="FeAprobado" />
+          <ScalarProperty Name="CoUsuarioAdmin" ColumnName="CoUsuarioAdmin" />
+          <ScalarProperty Name="CoClub" ColumnName="CoClub" />
+          <ScalarProperty Name="CoOferta" ColumnName="CoOferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="ent_familiarModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="CoUsuario" ColumnName="CoUsuario" />
+          <ScalarProperty Name="CoTipoUsuario" ColumnName="CoTipoUsuario" />
+          <ScalarProperty Name="NoEmail" ColumnName="NoEmail" />
+          <ScalarProperty Name="FlEstado" ColumnName="FlEstado" />
+          <ScalarProperty Name="NoContrasena" ColumnName="NoContrasena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="juego_material" TypeName="ent_familiarModel.juego_material" StoreEntitySet="juego_material">
+      <EndProperty Name="juego">
+        <ScalarProperty Name="CoJuego" ColumnName="CoJuego" />
+      </EndProperty>
+      <EndProperty Name="material">
+        <ScalarProperty Name="CoMaterial" ColumnName="CoMaterial" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
