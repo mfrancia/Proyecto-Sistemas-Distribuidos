@@ -5,15 +5,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MvcEntretenimientoWeb.Controllers
 {
     public class RegistroCampoController : Controller
     {
         //
         // GET: /RegistroCompra/
-
+        private ent_familiarEntities db = new ent_familiarEntities();
         public ActionResult Index()
         {
+            
+            this.ViewData["ddlservicio"] = new SelectList(db.servicio, "CoServicio", "TxtDescripcion");
+            this.ViewData["ddljuego"] = new SelectList(db.juego, "CoJuego", "TxtDescripcion");
+            
             return View();
         }
 
@@ -32,6 +37,10 @@ namespace MvcEntretenimientoWeb.Controllers
             return Json(servicio);
         }
 
-
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }

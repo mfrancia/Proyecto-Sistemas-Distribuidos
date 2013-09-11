@@ -1,16 +1,13 @@
-﻿
-
-@{
-    ViewBag.Title = "RegistrarCampo";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+    ViewBag.Title = "Registro Campo";
 }
 
-
-@using (Html.BeginForm())
+@using (Html.BeginForm("RegistrarCampo", "Campo", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-
+    
+    
     <div id="ContentRegion" class="container-fluid text-left">
         -- Registro de Campo --
 
@@ -64,8 +61,8 @@
                         <label>Servicio:</label>
                     </label>
                     <div class="controls ctlreq" style="max-height: 200px;">
-                        
-                       @Html.DropDownList("ddlservicio") 
+
+                        @Html.DropDownList("ddlservicio")
                     </div>
 
                 </div>
@@ -78,7 +75,7 @@
                     <label>Numero de Personas:</label>
                 </label>
                 <div class="controls" style="max-height: 200px;">
-                    <input type="text" id="txtpersonasservicio" placeholder="Ingrese Numero de Personas"/>
+                    <input type="text" id="txtpersonasservicio" placeholder="Ingrese Numero de Personas" />
                 </div>
             </div>
 
@@ -99,7 +96,7 @@
         </div>
     </div>
     
-     <div id="JuegosContent" class="container-fluid text-left">
+    <div id="JuegosContent" class="container-fluid text-left">
         -- Juegos --
 
         <div class="row-fluid">
@@ -109,8 +106,8 @@
                         <label>Juego:</label>
                     </label>
                     <div class="controls ctlreq" style="max-height: 200px;">
-                        <select id="ddljuego">
-                        </select>
+
+                        @Html.DropDownList("ddljuego")
                     </div>
 
                 </div>
@@ -123,7 +120,7 @@
                     <label>Numero de Personas:</label>
                 </label>
                 <div class="controls" style="max-height: 200px;">
-                    <input type="text" id="txtpersonasjuegos" placeholder="Ingrese Numero de personas"/>
+                    <input type="text" id="txtpersonasjuegos" placeholder="Ingrese Numero de personas" />
                 </div>
             </div>
 
@@ -142,33 +139,8 @@
             </div>
 
         </div>
+        <div class="row">
+            <input type="submit" value="Grabar"/>
+        </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/jqueryui")
-    @Scripts.Render("~/bundles/jqueryval")
-<script>
-
-    @*$(document).ready(function () {
-        $.ajax({
-            type: 'POST',
-            url: '@Url.Action("GetServicios", "RegistroCampo")',
-    
-    success: function (data) {
-        $.each(data, function (i, value) {
-            $('#ddlservicio').append($('<option>').text(value.CoServicio).attr('value', value.TxtDescripcion));
-        });
-    },
-    dataType: 'json',
-    contentType: 'application/json, charset=utf-8',
-        });
-    });*@
-</script>
-}
-
