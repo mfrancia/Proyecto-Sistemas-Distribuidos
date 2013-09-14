@@ -2,7 +2,7 @@
     ViewBag.Title = "Registro Campo";
 }
 
-@using (Html.BeginForm("RegistrarCampo", "Campo", FormMethod.Post))
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
@@ -95,7 +95,7 @@
 
         </div>
         <div class="row">
-            <input type="submit" value="Agregar" id="btnagregarservicios"/>
+            <input type="submit" value="Agregar" id="btnagregarservicios" />
         </div>
     </div>
     
@@ -141,11 +141,47 @@
                 </div>
             </div>
 
-            <input type="submit" value="Agregar" id="btnagregarjuego"/>
+            <input type="submit" value="Agregar" id="btnagregarjuego" />
 
         </div>
         <div class="row">
-            <input type="submit" value="Grabar"/>
+
+            <button id="btnGrabar">
+                Grabar</button>
         </div>
     </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        var Geturlcabecera =  "http://localhost:1839/Service/";
+        $(document).ready(function () {
+            $("#btnGrabar").click(function () {
+
+                var jData = {};
+                jData.CoResponsable = 2;
+                jData.FeDiaCampo = Date.parse($('#txtfecha').val());
+                jData.NuTotalPersonas = parseInt($('#txtnropersonas').val());
+                jData.CoClub = 1;
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    async: false,
+                    url: Geturlcabecera+"RegistrarCabeceraCampo",
+                    data: JSON.stringify(jData),
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (data) {
+                        alert("Datos grabados");
+                    },
+                    error: function (xhr) {
+                        debugger;
+                    }
+                });
+            });
+        });
+    </script>
 }

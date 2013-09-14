@@ -1,0 +1,8 @@
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\bin\Debug\DAEntretenimiento.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\bin\Debug\DAEntretenimiento.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\bin\Debug\BEEntities.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\bin\Debug\MySql.Data.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\bin\Debug\BEEntities.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\obj\Debug\DAEntretenimiento.csprojResolveAssemblyReference.cache
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\obj\Debug\DAEntretenimiento.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\DAEntretenimiento\obj\Debug\DAEntretenimiento.pdb
