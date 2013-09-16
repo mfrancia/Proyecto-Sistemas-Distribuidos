@@ -21,10 +21,10 @@ namespace DAEntretenimiento
 
 
 
-        public void RegistrarSolicitudCampo(BEEntities.BESolicitudCampo besolicitudcampo)
+        public int RegistrarSolicitudCampo(BEEntities.BESolicitudCampo besolicitudcampo)
         {
             MySql.Data.MySqlClient.MySqlConnection mycon = new MySqlConnection(GetConnectionString());
-
+            long newid = 0;
             try
             {
                 mycon.Open();
@@ -37,6 +37,42 @@ namespace DAEntretenimiento
                     cmd.Parameters.AddWithValue("@totalpersonas", besolicitudcampo.NuTotalPersonas);
                     cmd.Parameters.AddWithValue("@coclub", besolicitudcampo.CoClub);
                     
+                    cmd.Prepare();
+
+                    cmd.ExecuteNonQuery();
+                    newid = cmd.LastInsertedId;
+
+                    
+                }
+            }
+            catch (MySqlException ex)
+            {
+                throw (ex);
+            }
+            return (int)newid;
+        }
+
+        public void RegistrarServicioCampo(BEEntities.BEServicioCampo beserviciocampo)
+        {
+            MySql.Data.MySqlClient.MySqlConnection mycon = new MySqlConnection(GetConnectionString());
+
+            try
+            {
+                mycon.Open();
+                using (mycon)
+                {
+                    MySqlCommand cmd;
+                    cmd = new MySqlCommand("insert into detalle_dia_campo (CoDiaCampo,CoResponsable,NuSecuencia,NuPersonas,SsPrecioPersona,SsImporte,TxtComentario,CoServicio,CoJuego) values (@codcampo,@codresponsable,@nrosecuencia,@nropersonas,@preciopersona,@importe,@comentario,@codservicio,@codjuego) ", mycon);
+                    cmd.Parameters.AddWithValue("@codcampo", beserviciocampo.CoDiaCampo);
+                    cmd.Parameters.AddWithValue("@codresponsable", beserviciocampo.CoResponsable);
+                    cmd.Parameters.AddWithValue("@nrosecuencia", 2);
+                    cmd.Parameters.AddWithValue("@nropersonas", beserviciocampo.NuPersonas);
+                    cmd.Parameters.AddWithValue("@preciopersona", beserviciocampo.SsPrecioPersona);
+                    cmd.Parameters.AddWithValue("@importe", beserviciocampo.NuPersonas * beserviciocampo.SsPrecioPersona);
+                    cmd.Parameters.AddWithValue("@comentario", beserviciocampo.TxtComentario);
+                    cmd.Parameters.AddWithValue("@codservicio", beserviciocampo.CoServicio);
+                    cmd.Parameters.AddWithValue("@codjuego", beserviciocampo.CoJuego);
+
                     cmd.Prepare();
 
                     cmd.ExecuteNonQuery();

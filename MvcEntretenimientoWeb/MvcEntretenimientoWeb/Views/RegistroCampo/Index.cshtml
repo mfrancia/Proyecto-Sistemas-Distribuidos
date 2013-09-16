@@ -1,24 +1,24 @@
 ﻿@{
     ViewBag.Title = "Registro Campo";
+    
 }
 
-@using (Html.BeginForm())
+@using (Ajax.BeginForm(new AjaxOptions()))
 {
+    
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-    
-    
     <div id="ContentRegion" class="container-fluid text-left">
         -- Registro de Campo --
 
         <div class="row-fluid">
             <div class="span5">
                 <div class="control-group">
-                    <label class="control-label" style="max-height: 200px;">
+                    <label class="control-label" style="max-height: 210px;">
                         <label>Fecha:</label>
                     </label>
-                    <div class="controls ctlreq" style="max-height: 200px;">
-                        <input type="text" id="txtfecha" />
+                    <div class="controls" style="max-height: 200px;">
+                        <input id="txtfecha" value="10/10/2011" style="width: 206px;" />
                     </div>
                 </div>
             </div>
@@ -51,6 +51,7 @@
         </div>
     </div>
     
+   
     <div id="ServicioContent" class="container-fluid text-left">
         -- Registro de Servicio --
 
@@ -94,8 +95,16 @@
             </div>
 
         </div>
+
         <div class="row">
-            <input type="submit" value="Agregar" id="btnagregarservicios" />
+            <div class="span12" style="max-height: 200px;">
+                <input type="submit" value="Agregar" id="btnagregarservicios" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12" style="max-height: 200px;">
+                <div id="gvServicios"></div>
+            </div>
         </div>
     </div>
     
@@ -141,47 +150,187 @@
                 </div>
             </div>
 
-            <input type="submit" value="Agregar" id="btnagregarjuego" />
-
         </div>
         <div class="row">
+            <div class="span12" style="max-height: 200px;">
+                <input type="submit" value="Agregar" id="btnagregarjuego" />
+            </div>
+        </div>
 
-            <button id="btnGrabar">
-                Grabar</button>
+        <div class="row">
+            <div class="span12" style="max-height: 200px;">
+                <div id="gvJuegos"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12" style="max-height: 200px;">
+                <button id="btnGrabar">
+                    Grabar</button>
+            </div>
         </div>
     </div>
+    
+    <input type="hidden" id="hfcodcampo" />
 }
 
 @section Scripts {
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/kendo")
     <script>
-        var Geturlcabecera =  "http://localhost:1839/Service/";
+        var Geturlcabecera = "http://localhost:1839/Service/";
         $(document).ready(function () {
+            $('#txtfecha').kendoDateTimePicker().data("kendoDateTimePicker");
+            $('#gvServicios').kendoGrid({
+                dataSource: getDataSource(),
+                sortable: true,
+                selectable: false,
+                resizable: true,
+                sortable: {
+                    mode: 'single'
+                },
+                pageable: {
+                    numeric: true,
+                    previousNext: true,
+                    refresh: true,
+                    pageSizes: [5, 10, 15, 20]
+                },
+
+                columns: [
+                          { field: "TxtDescripcion", width: 100, title: "Servicio" },
+                          { field: "NuPersonas", width: 100, title: "Nro Personas" },
+                          { field: "TxtComentario", width: 60, title: "Descripcion" }
+                ]
+            });
+            function getDataSource() {
+
+                return new kendo.data.DataSource({
+                    type: "json",
+                    serverPaging: false,
+                    serverSorting: false,
+                    serverFiltering: true,
+                    pageSize: 5,
+                    sort: { field: "Name", dir: "asc" },
+                    transport: {
+                        read: {
+                            //url: 
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            type: "GET"
+
+                        },
+
+                    },
+
+
+                });
+            }
+
+            $('#gvJuegos').kendoGrid({
+                dataSource: getJuegosDataSource(),
+                sortable: true,
+                selectable: false,
+                resizable: true,
+                sortable: {
+                    mode: 'single'
+                },
+                pageable: {
+                    numeric: true,
+                    previousNext: true,
+                    refresh: true,
+                    pageSizes: [5, 10, 15, 20]
+                },
+
+                columns: [
+                          { field: "TxtDescripcion", width: 100, title: "Juego" },
+                          { field: "NuPersonas", width: 100, title: "Nro Personas" },
+                          { field: "TxtComentario", width: 60, title: "Descripcion" }
+                ]
+            });
+            function getJuegosDataSource() {
+
+                return new kendo.data.DataSource({
+                    type: "json",
+                    serverPaging: false,
+                    serverSorting: false,
+                    serverFiltering: true,
+                    pageSize: 5,
+                    sort: { field: "Name", dir: "asc" },
+                    transport: {
+                        read: {
+                            //url: 
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            type: "GET"
+
+                        },
+
+                    },
+
+
+                });
+            }
             $("#btnGrabar").click(function () {
 
-                var jData = {};
-                jData.CoResponsable = 2;
-                jData.FeDiaCampo = Date.parse($('#txtfecha').val());
-                jData.NuTotalPersonas = parseInt($('#txtnropersonas').val());
-                jData.CoClub = 1;
+                var besolicitudcampo = {};
+                besolicitudcampo.CoResponsable = 2;
+                besolicitudcampo.FeDiaCampo = '/Date(' + kendo.toString($("#txtfecha").data('kendoDateTimePicker').value(), 'yyyy-MM-ddTHH:mm:ss') + ')/';
+                besolicitudcampo.NuTotalPersonas = parseInt($('#txtnropersonas').val());
+                besolicitudcampo.CoClub = 1;
+                var param = JSON.stringify(besolicitudcampo);
                 $.ajax({
                     cache: false,
                     type: "POST",
-                    async: false,
-                    url: Geturlcabecera+"RegistrarCabeceraCampo",
-                    data: JSON.stringify(jData),
+                    async: true,
+                    url: Geturlcabecera + "RegistrarCabeceraCampo",
+                    data: param,
+                    processData: true,
                     dataType: "json",
                     contentType: "application/json",
                     success: function (data) {
+                        $('#hfcodcampo').val(data);
                         alert("Datos grabados");
+                        return false;
                     },
                     error: function (xhr) {
                         debugger;
                     }
                 });
             });
+            $("#btnagregarservicios").click(function () {
+
+                var beserviciocampo = {};
+                beserviciocampo.CoDiaCampo = $('#hfcodcampo').val();
+                beserviciocampo.CoResponsable = 2;
+                beserviciocampo.CoServicio = parseInt($('#ddlservicio option:selected').val());
+                beserviciocampo.NuPersonas = parseInt($('#txtpersonasservicio').val());
+                beserviciocampo.SsPrecioPersona = 10;
+                beserviciocampo.TxtComentario = $('#txtdescription').val()
+                var param = JSON.stringify(beserviciocampo);
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    async: true,
+                    url: Geturlcabecera + "RegistrarServicioCampo",
+                    data: param,
+                    processData: true,
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (data) {
+                        
+                        alert("Datos grabados");
+                        return false;
+                    },
+                    error: function (xhr) {
+                        debugger;
+                    }
+                });
+            });
+            
         });
     </script>
 }
+
+
+

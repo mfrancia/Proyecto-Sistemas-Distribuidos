@@ -9,7 +9,8 @@ namespace DAEntretenimiento
 {
     public interface IDASolicitudCampo
     {
-        void RegistrarSolicitudCampo(BESolicitudCampo besolicitudcampo);
+        int RegistrarSolicitudCampo(BESolicitudCampo besolicitudcampo);
+        void RegistrarServicioCampo(BEEntities.BEServicioCampo beserviciocampo);
        
     }
 }

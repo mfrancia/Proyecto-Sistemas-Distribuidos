@@ -93,7 +93,6 @@
     <Compile Include="ServiceEntretenimiento.svc.cs">
       <DependentUpon>ServiceEntretenimiento.svc</DependentUpon>
     </Compile>
-    <Compile Include="IServiceEntretenimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

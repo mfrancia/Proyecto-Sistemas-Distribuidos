@@ -1,5 +1,5 @@
-﻿using DAEntretenimiento;
-
+﻿using BEEntities;
+using DAEntretenimiento;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using System;
@@ -18,19 +18,32 @@ namespace WCFConsole
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
 
-
+    [ServiceContract]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class ServiceEntretenimiento : IServiceEntretenimiento
+    public class ServiceEntretenimiento
     {
-      [WebInvoke(Method = "POST", UriTemplate = "Service/RegistrarCabeceraCampo",
-            BodyStyle = WebMessageBodyStyle.WrappedRequest, RequestFormat = WebMessageFormat.Json)]
-        public void RegistrarCabeceraCampo(BEEntities.BESolicitudCampo besolicitudcampo)
+      [OperationContract]
+      [WebInvoke(Method="POST",UriTemplate = "/Service/RegistrarCabeceraCampo",
+             RequestFormat = WebMessageFormat.Json, ResponseFormat=WebMessageFormat.Json)]
+        public int RegistrarCabeceraCampo(BESolicitudCampo besolicitudcampo)
         {
             UnityContainer container = new UnityContainer();
             container.RegisterType<IDASolicitudCampo, DASolicitudCompra>();
             IDASolicitudCampo dacampo = container.Resolve<IDASolicitudCampo>();
             
-            dacampo.RegistrarSolicitudCampo(besolicitudcampo);
+            return dacampo.RegistrarSolicitudCampo(besolicitudcampo);
         }
+
+      [OperationContract]
+      [WebInvoke(Method = "POST", UriTemplate = "/Service/RegistrarServicioCampo",
+             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+      public void RegistrarServicioCampo(BEServicioCampo beserviciocampo)
+      {
+          UnityContainer container = new UnityContainer();
+          container.RegisterType<IDASolicitudCampo, DASolicitudCompra>();
+          IDASolicitudCampo dacampo = container.Resolve<IDASolicitudCampo>();
+
+          dacampo.RegistrarServicioCampo(beserviciocampo);
+      }
     }
 }

@@ -86,3 +86,5 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimie
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.csprojResolveAssemblyReference.cache
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\BEEntities.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\BEEntities.pdb

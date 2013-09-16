@@ -1,43 +1,69 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>@ViewBag.Title - Entretenimiento Familiar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootbusiness | Short description about company">
+    <meta name="author" content="Your name">
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width" />
+
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/kendo")
+    @Styles.Render("~/Content/kendo1")
     @Scripts.Render("~/bundles/modernizr")
+  
+    
 </head>
 <body>
+    <!-- Start: HEADER -->
     <header>
-        <div class="content-wrapper">
-            <div class="float-right">
-                <section id="login">
-                    @Html.Partial("_LoginPartial")
-                </section>
-                <nav>
-                    <ul id="menu">
-                    </ul>
-                </nav>
+        <!-- Start: Navigation wrapper -->
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Below button used for responsive navigation -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Start: Primary navigation -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li>@Html.ActionLink("Responsable de Familia", "Index", "RegistroCampo")</li>
+                            <li><a href="#">Dia de Campo</a></li>
+                            <li><a href="#">Servicios</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- End: Navigation wrapper -->
     </header>
-    <div id="body" class="form-horizontal">
+    <!-- End: HEADER -->
+    <!-- Start: MAIN CONTENT -->
+    <div class="content">
         @RenderSection("featured", required: false)
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()
         </section>
+
     </div>
+    <!-- End: MAIN CONTENT -->
+    <!-- Start: FOOTER -->
     <footer>
-        <div class="content-wrapper">
             <div class="float-left">
                 <p>&copy; @DateTime.Now.Year - Entretenimiento Familiar</p>
+                Derechos reservados &reg; <b>Grupo Seccion</b> - 2013
             </div>
-            Derechos reservados &reg; <b>Grupo Seccion</b> - 2013
-        </div>
+            
+        
     </footer>
-
+    <!-- End: FOOTER -->
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/boot")
     @RenderSection("scripts", required: false)
+    
 </body>
 </html>
