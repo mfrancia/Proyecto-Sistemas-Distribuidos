@@ -30,7 +30,7 @@
                     <label>Lugar:</label>
                 </label>
                 <div class="controls" style="max-height: 200px;">
-                    <input type="text" id="txtLugar" placeholder="Ingrese Lugar" />
+                    @Html.DropDownList("ddlclub")
                 </div>
             </div>
 
@@ -198,7 +198,7 @@
                 },
 
                 columns: [
-                          { field: "TxtDescripcion", width: 100, title: "Servicio" },
+                          { field: "NameServicio", width: 100, title: "Servicio" },
                           { field: "NuPersonas", width: 100, title: "Nro Personas" },
                           { field: "TxtComentario", width: 60, title: "Descripcion" }
                 ]
@@ -206,22 +206,14 @@
             function getDataSource() {
 
                 return new kendo.data.DataSource({
+                    data: servicios,
                     type: "json",
                     serverPaging: false,
                     serverSorting: false,
                     serverFiltering: true,
                     pageSize: 5,
                     sort: { field: "Name", dir: "asc" },
-                    transport: {
-                        read: {
-                            //url: 
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json",
-                            type: "GET"
 
-                        },
-
-                    },
 
 
                 });
@@ -243,7 +235,7 @@
                 },
 
                 columns: [
-                          { field: "TxtDescripcion", width: 100, title: "Juego" },
+                          { field: "NameJuego", width: 100, title: "Juego" },
                           { field: "NuPersonas", width: 100, title: "Nro Personas" },
                           { field: "TxtComentario", width: 60, title: "Descripcion" }
                 ]
@@ -251,22 +243,13 @@
             function getJuegosDataSource() {
 
                 return new kendo.data.DataSource({
+                    data: juegos,
                     type: "json",
                     serverPaging: false,
                     serverSorting: false,
                     serverFiltering: true,
                     pageSize: 5,
                     sort: { field: "Name", dir: "asc" },
-                    transport: {
-                        read: {
-                            //url: 
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json",
-                            type: "GET"
-
-                        },
-
-                    },
 
 
                 });
@@ -277,7 +260,7 @@
                 besolicitudcampo.CoResponsable = 2;
                 besolicitudcampo.FeDiaCampo = '/Date(' + kendo.toString($("#txtfecha").data('kendoDateTimePicker').value(), 'yyyy-MM-ddTHH:mm:ss') + ')/';
                 besolicitudcampo.NuTotalPersonas = parseInt($('#txtnropersonas').val());
-                besolicitudcampo.CoClub = 1;
+                besolicitudcampo.CoClub = parseInt($('#ddlclub option:selected').val());
                 var param = JSON.stringify(besolicitudcampo);
                 $.ajax({
                     cache: false,
@@ -290,44 +273,103 @@
                     contentType: "application/json",
                     success: function (data) {
                         $('#hfcodcampo').val(data);
-                        alert("Datos grabados");
+                        for (var i = 0; i < servicios.length; i++) {
+                            servicios[i].CoDiaCampo = parseInt($('#hfcodcampo').val());
+                        }
+                        var param = JSON.stringify(servicios);
+                        $.ajax({
+                            cache: false,
+                            type: "POST",
+                            async: true,
+                            url: Geturlcabecera + "RegistrarServicioCampo",
+                            data: param,
+                            processData: true,
+                            dataType: "json",
+                            contentType: "application/json",
+                            success: function (data) {
+
+                                //alert("Datos grabados");
+                                return false;
+                            },
+                            error: function (xhr) {
+                                debugger;
+                            }
+                        });
+                        for (var i = 0; i < juegos.length; i++) {
+                            juegos[i].CoDiaCampo = parseInt($('#hfcodcampo').val());
+                        }
+                        var param = JSON.stringify(juegos);
+                        $.ajax({
+                            cache: false,
+                            type: "POST",
+                            async: true,
+                            url: Geturlcabecera + "RegistrarServicioCampo",
+                            data: param,
+                            processData: true,
+                            dataType: "json",
+                            contentType: "application/json",
+                            success: function (data) {
+
+                                alert("Datos grabados");
+                                return false;
+                            },
+                            error: function (xhr) {
+                                debugger;
+                            }
+                        });
+                        //alert("Datos grabados");
                         return false;
                     },
                     error: function (xhr) {
                         debugger;
                     }
                 });
+
+
             });
+            var servicios = [];
+            var juegos = [];
+            var secuencia = 0;
             $("#btnagregarservicios").click(function () {
 
-                var beserviciocampo = {};
-                beserviciocampo.CoDiaCampo = $('#hfcodcampo').val();
-                beserviciocampo.CoResponsable = 2;
-                beserviciocampo.CoServicio = parseInt($('#ddlservicio option:selected').val());
-                beserviciocampo.NuPersonas = parseInt($('#txtpersonasservicio').val());
-                beserviciocampo.SsPrecioPersona = 10;
-                beserviciocampo.TxtComentario = $('#txtdescription').val()
-                var param = JSON.stringify(beserviciocampo);
-                $.ajax({
-                    cache: false,
-                    type: "POST",
-                    async: true,
-                    url: Geturlcabecera + "RegistrarServicioCampo",
-                    data: param,
-                    processData: true,
-                    dataType: "json",
-                    contentType: "application/json",
-                    success: function (data) {
-                        
-                        alert("Datos grabados");
-                        return false;
-                    },
-                    error: function (xhr) {
-                        debugger;
-                    }
-                });
+                var servicio = {};
+
+                servicio.NameServicio = $('#ddlservicio option:selected').text(),
+                servicio.NuPersonas = parseInt($('#txtpersonasservicio').val()),
+
+                secuencia = secuencia + 1;
+
+                servicio.CoResponsable = 2;
+                servicio.CoJuego = parseInt($('#ddljuego option:selected').val());
+                servicio.CoServicio = parseInt($('#ddlservicio option:selected').val());
+                servicio.NuSecuencia = secuencia;
+                servicio.TxtComentario = $('#txtdescription').val();
+                servicio.SsPrecioPersona = 10;
+
+                servicios.push(servicio);
+                var grid = $("#gvServicios").data("kendoGrid"); grid.dataSource.data(servicios);
             });
-            
+
+            $("#btnagregarjuego").click(function () {
+
+                var juego = {};
+
+                juego.NameJuego = $('#ddljuego option:selected').text(),
+                juego.NuPersonas = parseInt($('#txtpersonasjuegos').val()),
+
+                secuencia = secuencia + 1;
+
+
+                juego.CoResponsable = 2;
+                juego.CoJuego = parseInt($('#ddljuego option:selected').val());
+                juego.CoServicio = parseInt($('#ddlservicio option:selected').val());
+
+                juego.TxtComentario = $('#txtdesjuegos').val();
+                juego.SsPrecioPersona = 10;
+                juego.NuSecuencia = secuencia;
+                juegos.push(juego);
+                var grid = $("#gvJuegos").data("kendoGrid"); grid.dataSource.data(juegos);
+            });
         });
     </script>
 }

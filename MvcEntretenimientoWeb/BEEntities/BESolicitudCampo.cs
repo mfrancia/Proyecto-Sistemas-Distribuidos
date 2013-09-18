@@ -8,30 +8,20 @@ using System.Threading.Tasks;
 namespace BEEntities
 {
     [DataContract]
-    public class BEServicioCampo
+    
+    public class BESolicitudCampo
     {
-        [DataMember]
-        public int CoDiaCampo { get; set; }
-
         [DataMember]
         public int CoResponsable { get; set; }
 
         [DataMember]
-        public int CoServicio { get; set; }
+        public DateTime FeDiaCampo { get; set; }
 
         [DataMember]
-        public int CoJuego { get; set; }
+        public int NuTotalPersonas { get; set; }
+
 
         [DataMember]
-        public int NuPersonas { get; set; }
-
-        [DataMember]
-        public decimal SsPrecioPersona { get; set; }
-
-        [DataMember]
-        public decimal SsImporte { get; set; }
-
-        [DataMember]
-        public decimal TxtComentario { get; set; }
+        public int CoClub { get; set; }
     }
 }

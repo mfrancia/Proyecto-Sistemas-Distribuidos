@@ -22,12 +22,12 @@ namespace WCFConsole
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class ServiceEntretenimiento
     {
+      UnityContainer container = new UnityContainer();
       [OperationContract]
       [WebInvoke(Method="POST",UriTemplate = "/Service/RegistrarCabeceraCampo",
              RequestFormat = WebMessageFormat.Json, ResponseFormat=WebMessageFormat.Json)]
         public int RegistrarCabeceraCampo(BESolicitudCampo besolicitudcampo)
         {
-            UnityContainer container = new UnityContainer();
             container.RegisterType<IDASolicitudCampo, DASolicitudCompra>();
             IDASolicitudCampo dacampo = container.Resolve<IDASolicitudCampo>();
             
@@ -37,13 +37,12 @@ namespace WCFConsole
       [OperationContract]
       [WebInvoke(Method = "POST", UriTemplate = "/Service/RegistrarServicioCampo",
              RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-      public void RegistrarServicioCampo(BEServicioCampo beserviciocampo)
+      public void RegistrarServicioCampo(List<BEServicioCampo> listbeserviciocampo)
       {
-          UnityContainer container = new UnityContainer();
           container.RegisterType<IDASolicitudCampo, DASolicitudCompra>();
           IDASolicitudCampo dacampo = container.Resolve<IDASolicitudCampo>();
 
-          dacampo.RegistrarServicioCampo(beserviciocampo);
+          dacampo.RegistrarServicioJuegoCampo(listbeserviciocampo);
       }
     }
 }

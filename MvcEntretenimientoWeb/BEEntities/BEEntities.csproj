@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BESolicitudCampo.cs" />
     <Compile Include="BEServicioCampo.cs" />
+    <Compile Include="BESolicitudCampo.cs" />
+    <Compile Include="BEJuegoCampo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

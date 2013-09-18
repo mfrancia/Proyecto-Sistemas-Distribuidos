@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace BEEntities
 {
     [DataContract]
-    public class BEServicioCampo
+    public class BEJuegoCampo
     {
         [DataMember]
         public int CoDiaCampo { get; set; }
@@ -25,10 +25,8 @@ namespace BEEntities
         [DataMember]
         public int NuPersonas { get; set; }
 
-        
         [DataMember]
         public int NuSecuencia { get; set; }
-
 
         [DataMember]
         public decimal SsPrecioPersona { get; set; }
@@ -40,6 +38,6 @@ namespace BEEntities
         public string TxtComentario { get; set; }
 
         [DataMember]
-        public string NameServicio { get; set; }
+        public string NameJuego { get; set; }
     }
 }

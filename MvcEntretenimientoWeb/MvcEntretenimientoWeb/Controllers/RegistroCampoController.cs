@@ -18,6 +18,7 @@ namespace MvcEntretenimientoWeb.Controllers
             
             this.ViewData["ddlservicio"] = new SelectList(db.servicio, "CoServicio", "TxtDescripcion");
             this.ViewData["ddljuego"] = new SelectList(db.juego, "CoJuego", "TxtDescripcion");
+            this.ViewData["ddlclub"] = new SelectList(db.club, "CoClub", "NoClub");
             
             return View();
         }
