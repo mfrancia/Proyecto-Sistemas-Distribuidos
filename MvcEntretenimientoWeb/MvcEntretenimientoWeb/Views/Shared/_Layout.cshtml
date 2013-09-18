@@ -12,10 +12,13 @@
     @Styles.Render("~/Content/kendo")
     @Styles.Render("~/Content/kendo1")
     @Scripts.Render("~/bundles/modernizr")
-  
-    
+
+
 </head>
 <body>
+    <section id="login">
+        @Html.Partial("_LoginPartial")
+    </section>
     <!-- Start: HEADER -->
     <header>
         <!-- Start: Navigation wrapper -->
@@ -31,9 +34,13 @@
                     <!-- Start: Primary navigation -->
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
-                            <li>@Html.ActionLink("Responsable de Familia", "Index", "RegistroCampo")</li>
-                            <li><a href="#">Dia de Campo</a></li>
-                            <li><a href="#">Servicios</a></li>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            @if (ViewContext.HttpContext.User.IsInRole("User"))
+                            {
+                                <li>@Html.ActionLink("Registro Dia de Campo", "Index", "RegistroCampo")</li>
+                                <li><a href="#">Servicios</a></li>
+                            }
+
                         </ul>
                     </div>
                 </div>
@@ -53,17 +60,17 @@
     <!-- End: MAIN CONTENT -->
     <!-- Start: FOOTER -->
     <footer>
-            <div class="float-left">
-                <p>&copy; @DateTime.Now.Year - Entretenimiento Familiar</p>
-                Derechos reservados &reg; <b>Grupo Seccion</b> - 2013
-            </div>
-            
-        
+        <div class="float-left">
+            <p>&copy; @DateTime.Now.Year - Entretenimiento Familiar</p>
+            Derechos reservados &reg; <b>Grupo Seccion</b> - 2013
+        </div>
+
+
     </footer>
     <!-- End: FOOTER -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/boot")
     @RenderSection("scripts", required: false)
-    
+
 </body>
 </html>

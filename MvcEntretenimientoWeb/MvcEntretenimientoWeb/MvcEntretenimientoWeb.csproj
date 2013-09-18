@@ -40,10 +40,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Web, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Web.6.7.4\lib\net40\MySql.Web.dll</HintPath>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Assemblies\MySql.Data.Entity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -489,9 +492,17 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BEEntities\BEEntities.csproj">
-      <Project>{e4ee00bd-ae19-4d60-9a97-a15ec1178a27}</Project>
-      <Name>BEEntities</Name>
+    <ProjectReference Include="..\MySql.Data.Extension\MySql.Data.Extension.csproj">
+      <Project>{4e2a1497-bd2c-46e1-80b7-82e2b4eca21b}</Project>
+      <Name>MySql.Data.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySql.Web.Extension\MySql.Web.Extension.csproj">
+      <Project>{e3e3b30a-0dbd-462b-8ca0-9377afa84381}</Project>
+      <Name>MySql.Web.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleMembershipTest.Dac\SimpleMembershipTest.Dac.csproj">
+      <Project>{b5c5f5dc-37ec-4c34-b4eb-ed84d7edd683}</Project>
+      <Name>SimpleMembershipTest.Dac</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

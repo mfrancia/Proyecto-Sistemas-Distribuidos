@@ -68,6 +68,8 @@ namespace MvcEntretenimientoWeb.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+        
     }
 
     public class RegisterModel
@@ -86,6 +88,36 @@ namespace MvcEntretenimientoWeb.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Nombres?")]
+        public string NoNombres { get; set; }
+
+        [Required]
+        [Display(Name = "Apellido Paterno?")]
+        public string NoApePaterno { get; set; }
+
+        [Required]
+        [Display(Name = "Apellido Materno?")]
+        public string NoApeMaterno { get; set; }
+
+        
+        [Display(Name = "Tipo Documento?")]
+        public string CoTipoDocumento { get; set; }
+        
+        
+        [Display(Name = "Numero Documento?")]
+        public string NuDocumento { get; set; }
+
+        [Display(Name = "Direccion?")]
+        public string NoDireccion { get; set; }
+
+        [Display(Name = "Celular?")]
+        public string NuCelular { get; set; }
+
+        [Required]
+        [Display(Name = "Email?")]
+        public string Email { get; set; }
     }
 
     public class ExternalLogin

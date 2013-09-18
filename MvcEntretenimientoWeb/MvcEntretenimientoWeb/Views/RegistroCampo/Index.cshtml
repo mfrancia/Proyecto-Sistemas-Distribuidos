@@ -257,7 +257,7 @@
             $("#btnGrabar").click(function () {
 
                 var besolicitudcampo = {};
-                besolicitudcampo.CoResponsable = 2;
+                besolicitudcampo.CoResponsable = @WebSecurity.CurrentUserId
                 besolicitudcampo.FeDiaCampo = '/Date(' + kendo.toString($("#txtfecha").data('kendoDateTimePicker').value(), 'yyyy-MM-ddTHH:mm:ss') + ')/';
                 besolicitudcampo.NuTotalPersonas = parseInt($('#txtnropersonas').val());
                 besolicitudcampo.CoClub = parseInt($('#ddlclub option:selected').val());
@@ -339,7 +339,7 @@
 
                 secuencia = secuencia + 1;
 
-                servicio.CoResponsable = 2;
+                servicio.CoResponsable = @WebSecurity.CurrentUserId
                 servicio.CoJuego = parseInt($('#ddljuego option:selected').val());
                 servicio.CoServicio = parseInt($('#ddlservicio option:selected').val());
                 servicio.NuSecuencia = secuencia;
@@ -360,7 +360,7 @@
                 secuencia = secuencia + 1;
 
 
-                juego.CoResponsable = 2;
+                juego.CoResponsable = @WebSecurity.CurrentUserId
                 juego.CoJuego = parseInt($('#ddljuego option:selected').val());
                 juego.CoServicio = parseInt($('#ddlservicio option:selected').val());
 

@@ -15,7 +15,6 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimie
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\Microsoft.Web.WebPages.OAuth.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Data.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Data.Entity.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Web.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\Newtonsoft.Json.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\System.Net.Http.Formatting.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\System.Spatial.dll
@@ -86,5 +85,10 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimie
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.csprojResolveAssemblyReference.cache
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\obj\Debug\MvcEntretenimientoWeb.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\BEEntities.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\BEEntities.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Data.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Web.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Data.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\MySql.Web.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\ko\MySql.Web.Extension.resources.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\SimpleMembershipTest.Dac.exe
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MvcEntretenimientoWeb\bin\SimpleMembershipTest.Dac.pdb
