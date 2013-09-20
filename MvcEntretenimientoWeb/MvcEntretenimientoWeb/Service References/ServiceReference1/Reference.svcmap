@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bf9b3732-a587-4b15-9fcf-9ac5502bd79c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1839/ServiceEntretenimiento.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceEntretenimiento.xsd" MetadataType="Schema" ID="2bec43d8-71a6-4c02-87bb-68cf238fa1ad" SourceId="1" SourceUrl="http://localhost:1839/ServiceEntretenimiento.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceEntretenimiento.wsdl" MetadataType="Wsdl" ID="6d2e31a2-7983-4441-8d2c-76a13c4e02d3" SourceId="1" SourceUrl="http://localhost:1839/ServiceEntretenimiento.svc?wsdl" />
+    <MetadataFile FileName="ServiceEntretenimiento1.xsd" MetadataType="Schema" ID="7ff449b6-e9c3-4b57-afdf-90468f3c9bf1" SourceId="1" SourceUrl="http://localhost:1839/ServiceEntretenimiento.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceEntretenimiento.disco" MetadataType="Disco" ID="888f29b8-ed39-4365-8b2d-b4729fdf6802" SourceId="1" SourceUrl="http://localhost:1839/ServiceEntretenimiento.svc?disco" />
+    <MetadataFile FileName="ServiceEntretenimiento2.xsd" MetadataType="Schema" ID="4bf4a3e8-3e31-4cab-b494-3d7475ef3f8d" SourceId="1" SourceUrl="http://localhost:1839/ServiceEntretenimiento.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

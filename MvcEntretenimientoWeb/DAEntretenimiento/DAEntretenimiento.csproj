@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAMaestros.cs" />
     <Compile Include="DASolicitudCompra.cs" />
+    <Compile Include="Interface\IDAMaestros.cs" />
     <Compile Include="Interface\IDASolicitudCampo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

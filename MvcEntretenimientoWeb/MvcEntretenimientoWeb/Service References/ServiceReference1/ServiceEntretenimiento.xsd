@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BEEntities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BEEntities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BESolicitudCampo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CoClub" type="xs:int" />
+      <xs:element minOccurs="0" name="CoResponsable" type="xs:int" />
+      <xs:element minOccurs="0" name="FeDiaCampo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NuTotalPersonas" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BESolicitudCampo" nillable="true" type="tns:BESolicitudCampo" />
+  <xs:complexType name="ArrayOfBEServicioCampo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEServicioCampo" nillable="true" type="tns:BEServicioCampo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEServicioCampo" nillable="true" type="tns:ArrayOfBEServicioCampo" />
+  <xs:complexType name="BEServicioCampo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CoDiaCampo" type="xs:int" />
+      <xs:element minOccurs="0" name="CoJuego" type="xs:int" />
+      <xs:element minOccurs="0" name="CoResponsable" type="xs:int" />
+      <xs:element minOccurs="0" name="CoServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="NameServicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NuPersonas" type="xs:int" />
+      <xs:element minOccurs="0" name="NuSecuencia" type="xs:int" />
+      <xs:element minOccurs="0" name="SsImporte" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SsPrecioPersona" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TxtComentario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEServicioCampo" nillable="true" type="tns:BEServicioCampo" />
+  <xs:complexType name="ArrayOfBEClub">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEClub" nillable="true" type="tns:BEClub" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEClub" nillable="true" type="tns:ArrayOfBEClub" />
+  <xs:complexType name="BEClub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CoClub" type="xs:int" />
+      <xs:element minOccurs="0" name="NoClub" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEClub" nillable="true" type="tns:BEClub" />
+  <xs:complexType name="ArrayOfBEJuego">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEJuego" nillable="true" type="tns:BEJuego" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEJuego" nillable="true" type="tns:ArrayOfBEJuego" />
+  <xs:complexType name="BEJuego">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CoJuego" type="xs:int" />
+      <xs:element minOccurs="0" name="TxtDescripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEJuego" nillable="true" type="tns:BEJuego" />
+  <xs:complexType name="ArrayOfBEServicio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEServicio" nillable="true" type="tns:BEServicio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEServicio" nillable="true" type="tns:ArrayOfBEServicio" />
+  <xs:complexType name="BEServicio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CoServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="TxtDescripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEServicio" nillable="true" type="tns:BEServicio" />
+</xs:schema>

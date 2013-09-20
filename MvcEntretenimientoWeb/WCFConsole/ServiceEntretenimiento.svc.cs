@@ -44,5 +44,33 @@ namespace WCFConsole
 
           dacampo.RegistrarServicioJuegoCampo(listbeserviciocampo);
       }
+
+      [OperationContract]
+      public List<BEClub> LeerClubs()
+      {
+          container.RegisterType<IDAMaestros, DAMaestros>();
+          IDAMaestros dacampo = container.Resolve<IDAMaestros>();
+
+          return dacampo.LeerClubs();
+      }
+
+      [OperationContract]
+      public List<BEJuego> LeerJuegos()
+      {
+          container.RegisterType<IDAMaestros, DAMaestros>();
+          IDAMaestros dacampo = container.Resolve<IDAMaestros>();
+
+          return dacampo.LeerJuegos();
+      }
+
+      [OperationContract]
+      public List<BEServicio> LeerServicios()
+      {
+          container.RegisterType<IDAMaestros, DAMaestros>();
+          IDAMaestros dacampo = container.Resolve<IDAMaestros>();
+
+          return dacampo.LeerServicios();
+      }
+
     }
 }

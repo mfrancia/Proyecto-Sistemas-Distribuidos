@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Configuration;
 using DAEntretenimiento;
 using System.Data;
+using BEEntities;
 
 namespace DAEntretenimiento
 {
@@ -36,13 +37,13 @@ namespace DAEntretenimiento
                     cmd.Parameters.AddWithValue("@fecdiacampo", besolicitudcampo.FeDiaCampo);
                     cmd.Parameters.AddWithValue("@totalpersonas", besolicitudcampo.NuTotalPersonas);
                     cmd.Parameters.AddWithValue("@coclub", besolicitudcampo.CoClub);
-                    
+
                     cmd.Prepare();
 
                     cmd.ExecuteNonQuery();
                     newid = cmd.LastInsertedId;
 
-                    
+
                 }
             }
             catch (MySqlException ex)
@@ -62,7 +63,7 @@ namespace DAEntretenimiento
                 using (mycon)
                 {
                     MySqlCommand cmd;
-                    int secuencia=1;
+                    int secuencia = 1;
                     foreach (var beserviciocampo in listbeserviciocampo)
                     {
                         if (beserviciocampo.CoDiaCampo > 0)
@@ -90,5 +91,8 @@ namespace DAEntretenimiento
                 throw (ex);
             }
         }
+
+ 
+
     }
 }

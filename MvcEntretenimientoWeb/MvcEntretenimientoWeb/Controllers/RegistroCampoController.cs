@@ -12,13 +12,14 @@ namespace MvcEntretenimientoWeb.Controllers
     {
         //
         // GET: /RegistroCompra/
-        private ent_familiarEntities db = new ent_familiarEntities();
+
         public ActionResult Index()
         {
-            
-            this.ViewData["ddlservicio"] = new SelectList(db.servicio, "CoServicio", "TxtDescripcion");
-            this.ViewData["ddljuego"] = new SelectList(db.juego, "CoJuego", "TxtDescripcion");
-            this.ViewData["ddlclub"] = new SelectList(db.club, "CoClub", "NoClub");
+            ServiceReference1.ServiceEntretenimientoClient service = new ServiceReference1.ServiceEntretenimientoClient();
+
+            this.ViewData["ddlservicio"] = new SelectList(service.LeerServicios(), "CoServicio", "TxtDescripcion");
+            this.ViewData["ddljuego"] = new SelectList(service.LeerJuegos(), "CoJuego", "TxtDescripcion");
+            this.ViewData["ddlclub"] = new SelectList(service.LeerClubs(), "CoClub", "NoClub");
             
             return View();
         }
@@ -29,18 +30,10 @@ namespace MvcEntretenimientoWeb.Controllers
             return View();
         }
 
-        public JsonResult GetServicios()
-        {
-            ent_familiarEntities db = new ent_familiarEntities();
-            List<servicio> servicio = (from s in db.servicio
-                            select s).ToList();
-
-            return Json(servicio);
-        }
-
+        
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+           
             base.Dispose(disposing);
         }
     }
