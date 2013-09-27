@@ -119,13 +119,13 @@ namespace MvcEntretenimientoWeb.ServiceReference1 {
         private int CoDiaCampoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CoJuegoField;
+        private System.Nullable<int> CoJuegoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int CoResponsableField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CoServicioField;
+        private System.Nullable<int> CoServicioField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameServicioField;
@@ -169,7 +169,7 @@ namespace MvcEntretenimientoWeb.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CoJuego {
+        public System.Nullable<int> CoJuego {
             get {
                 return this.CoJuegoField;
             }
@@ -195,7 +195,7 @@ namespace MvcEntretenimientoWeb.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CoServicio {
+        public System.Nullable<int> CoServicio {
             get {
                 return this.CoServicioField;
             }

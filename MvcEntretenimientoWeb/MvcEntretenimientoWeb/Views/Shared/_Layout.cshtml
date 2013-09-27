@@ -35,7 +35,7 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            @if (ViewContext.HttpContext.User.IsInRole("User"))
+                            @if (ViewContext.HttpContext.User.IsInRole("Responsable"))
                             {
                                 <li>@Html.ActionLink("Registro Dia de Campo", "Index", "RegistroCampo")</li>
                                 <li><a href="#">Servicios</a></li>

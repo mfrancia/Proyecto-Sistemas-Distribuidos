@@ -18,9 +18,9 @@
   <xs:complexType name="BEServicioCampo">
     <xs:sequence>
       <xs:element minOccurs="0" name="CoDiaCampo" type="xs:int" />
-      <xs:element minOccurs="0" name="CoJuego" type="xs:int" />
+      <xs:element minOccurs="0" name="CoJuego" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="CoResponsable" type="xs:int" />
-      <xs:element minOccurs="0" name="CoServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="CoServicio" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="NameServicio" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="NuPersonas" type="xs:int" />
       <xs:element minOccurs="0" name="NuSecuencia" type="xs:int" />

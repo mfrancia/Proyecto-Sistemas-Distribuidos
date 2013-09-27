@@ -17,10 +17,10 @@ namespace BEEntities
         public int CoResponsable { get; set; }
 
         [DataMember]
-        public int CoServicio { get; set; }
+        public int? CoServicio { get; set; }
 
         [DataMember]
-        public int CoJuego { get; set; }
+        public int? CoJuego { get; set; }
 
         [DataMember]
         public int NuPersonas { get; set; }

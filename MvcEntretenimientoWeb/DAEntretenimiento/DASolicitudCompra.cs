@@ -62,12 +62,12 @@ namespace DAEntretenimiento
                 mycon.Open();
                 using (mycon)
                 {
-                    MySqlCommand cmd;
-                    int secuencia = 1;
+
                     foreach (var beserviciocampo in listbeserviciocampo)
                     {
                         if (beserviciocampo.CoDiaCampo > 0)
                         {
+                            MySqlCommand cmd;
                             cmd = new MySqlCommand("insert into detalle_dia_campo (CoDiaCampo,CoResponsable,NuSecuencia,NuPersonas,SsPrecioPersona,SsImporte,TxtComentario,CoServicio,CoJuego) values (@codcampo,@codresponsable,@nrosecuencia,@nropersonas,@preciopersona,@importe,@comentario,@codservicio,@codjuego) ", mycon);
                             cmd.Parameters.AddWithValue("@codcampo", beserviciocampo.CoDiaCampo);
                             cmd.Parameters.AddWithValue("@codresponsable", beserviciocampo.CoResponsable);
@@ -76,8 +76,8 @@ namespace DAEntretenimiento
                             cmd.Parameters.AddWithValue("@preciopersona", beserviciocampo.SsPrecioPersona);
                             cmd.Parameters.AddWithValue("@importe", beserviciocampo.NuPersonas * beserviciocampo.SsPrecioPersona);
                             cmd.Parameters.AddWithValue("@comentario", beserviciocampo.TxtComentario);
-                            cmd.Parameters.AddWithValue("@codservicio", beserviciocampo.CoServicio);
-                            cmd.Parameters.AddWithValue("@codjuego", beserviciocampo.CoJuego);
+                            cmd.Parameters.AddWithValue("@codservicio", beserviciocampo.CoServicio==0?null:beserviciocampo.CoServicio);
+                            cmd.Parameters.AddWithValue("@codjuego", beserviciocampo.CoJuego==0?null:beserviciocampo.CoJuego);
 
                             cmd.Prepare();
 
@@ -92,7 +92,7 @@ namespace DAEntretenimiento
             }
         }
 
- 
+
 
     }
 }
