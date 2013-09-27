@@ -1,0 +1,6 @@
+C:\Users\Francia\Desktop\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.exe
+C:\Users\Francia\Desktop\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.xml
+C:\Users\Francia\Desktop\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.exe
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.pdb
