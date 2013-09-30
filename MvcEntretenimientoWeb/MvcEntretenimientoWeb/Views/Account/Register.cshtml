@@ -10,6 +10,23 @@
 
 @using (Html.BeginForm())
 {
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem
+    {
+        Text = "Documento Identidad",
+        Value = "1"
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "Pasaporte",
+        Value = "2",
+        Selected = true
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "Carnet Extranjeria",
+        Value = "3"
+    });
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
 
@@ -31,7 +48,16 @@
                 @Html.TextBoxFor(m => m.NoApeMaterno)
                 @Html.ValidationMessageFor(m => m.NoApeMaterno)
             </li>
-                 <li>
+            <li>
+                @Html.LabelFor(m => m.CoTipoDocumento)
+                @Html.DropDownListFor(m => m.CoTipoDocumento, listItems, "-- Seleccione --")
+            </li>
+             <li>
+                @Html.LabelFor(m => m.NuDocumento)
+                @Html.TextBoxFor(m => m.NuDocumento)
+                @Html.ValidationMessageFor(m => m.NuDocumento)
+            </li>
+            <li>
                 @Html.LabelFor(m => m.Email)
                 @Html.TextBoxFor(m => m.Email)
                 @Html.ValidationMessageFor(m => m.Email)

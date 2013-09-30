@@ -615,6 +615,7 @@ namespace MySql.Web.Security
 			var newUserProfile = new UserProfile
 			{
 				UserName = userName,
+                
 			};
 
 			if (values != null && values.Count > 0)

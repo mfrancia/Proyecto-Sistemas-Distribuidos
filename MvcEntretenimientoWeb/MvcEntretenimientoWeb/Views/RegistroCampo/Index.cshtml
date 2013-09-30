@@ -6,6 +6,7 @@
 @using (Ajax.BeginForm(new AjaxOptions()))
 {
     
+    
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
     <div id="ContentRegion" class="container-fluid text-left">

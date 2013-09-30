@@ -10,6 +10,7 @@ using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
 using MvcEntretenimientoWeb.Filters;
 using MvcEntretenimientoWeb.Models;
+using SimpleMembershipTest.Dac;
 
 namespace MvcEntretenimientoWeb.Controllers
 {
@@ -79,7 +80,20 @@ namespace MvcEntretenimientoWeb.Controllers
                 // Attempt to register the user
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
+                    
+                    
+                    using (SimpleMembershipTestDbContext db = new SimpleMembershipTestDbContext())
+                    {
+                        MySql.Web.Security.UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.UserName.ToLower());
+                        // Check if user already exists
+                        if (user == null)
+                        {
+                            // Insert name into the profile table
+                            db.UserProperties.Add(new UserProperty { UserName = model.UserName, Email = model.Email, NuCelular = model.NuCelular, NoNombres = model.NoNombres, NoApeMaterno = model.NoApeMaterno, NoApePaterno = model.NoApePaterno, NoDireccion = model.NoDireccion, CoTipoDocumento = model.CoTipoDocumento, NuDocumento = model.NuDocumento });
+                            db.SaveChanges();
+                        }
+                    }
+                    WebSecurity.CreateAccount(model.UserName, model.Password);
                     WebSecurity.Login(model.UserName, model.Password);
                     return RedirectToAction("Index", "Home");
                 }

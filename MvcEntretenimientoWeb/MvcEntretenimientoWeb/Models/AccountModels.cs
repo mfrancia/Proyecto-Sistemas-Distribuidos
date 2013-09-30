@@ -25,6 +25,24 @@ namespace MvcEntretenimientoWeb.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+
+        public string NoNombres { get; set; }
+
+        public string NoApePaterno { get; set; }
+
+        public string NoApeMaterno { get; set; }
+
+
+        public string CoTipoDocumento { get; set; }
+
+
+        public string NuDocumento { get; set; }
+
+        public string NoDireccion { get; set; }
+
+        public string NuCelular { get; set; }
+
+        public string Email { get; set; }
     }
 
     public class RegisterExternalLoginModel

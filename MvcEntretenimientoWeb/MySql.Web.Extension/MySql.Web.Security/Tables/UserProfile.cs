@@ -59,5 +59,7 @@ namespace MySql.Web.Security
 			get;
 			set;
 		}
+
+
 	}
 }
