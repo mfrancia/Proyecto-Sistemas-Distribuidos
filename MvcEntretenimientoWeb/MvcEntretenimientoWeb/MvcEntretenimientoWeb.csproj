@@ -196,6 +196,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegistroCampoController.cs" />
+    <Compile Include="Cotizador\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cotizador\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -278,6 +285,7 @@
     <Content Include="Content\BlueOpal\sprite%402x.png" />
     <Content Include="Content\BlueOpal\sprite.png" />
     <Content Include="Content\boot-business.css" />
+    <Content Include="Cotizador\WebForm1.aspx" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="Content\Default\editor.png" />
     <Content Include="Content\Default\imagebrowser.png" />

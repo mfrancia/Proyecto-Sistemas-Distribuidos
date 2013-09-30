@@ -44,7 +44,7 @@
                     </label>
                     <div class="controls ctlreq" style="max-height: 200px;">
 
-                        <input type="text" id="txtnropersonas" placeholder="Ingrese Numero de Personas" />
+                        <input type="text" id="txtnropersonas" placeholder="Ingrese Numero de Personas" required="required" />
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <label>Numero de Personas:</label>
                 </label>
                 <div class="controls" style="max-height: 200px;">
-                    <input type="text" id="txtpersonasservicio" placeholder="Ingrese Numero de Personas" />
+                    <input type="text" id="txtpersonasservicio" placeholder="Ingrese Numero de Personas" required="required" />
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
                     </label>
                     <div class="controls ctlreq" style="max-height: 200px;">
 
-                        <input type="text" id="txtdescription" placeholder="Ingrese Descripcion" />
+                        <input type="text" id="txtdescription" placeholder="Ingrese Descripcion" required="required" />
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                     <label>Numero de Personas:</label>
                 </label>
                 <div class="controls" style="max-height: 200px;">
-                    <input type="text" id="txtpersonasjuegos" placeholder="Ingrese Numero de personas" />
+                    <input type="text" id="txtpersonasjuegos" placeholder="Ingrese Numero de personas" required="required" />
                 </div>
             </div>
 
@@ -146,7 +146,7 @@
                     </label>
                     <div class="controls ctlreq" style="max-height: 200px;">
 
-                        <input type="text" id="txtdesjuegos" placeholder="Ingrese Descripcion" />
+                        <input type="text" id="txtdesjuegos" placeholder="Ingrese Descripcion" required="required" />
                     </div>
                 </div>
             </div>
@@ -164,9 +164,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="span12" style="max-height: 200px;">
+            <div class="span6" style="max-height: 200px;">
                 <button id="btnGrabar">
                     Grabar</button>
+            </div>
+            <div class="span2" style="max-height: 200px;">
+                <button id="btncotizar" style="display:none" onclick="vercotizacion();return false;">
+                    Ver Cotizacion</button>
             </div>
         </div>
     </div>
@@ -181,6 +185,11 @@
     @Scripts.Render("~/bundles/kendo")
     <script>
         var Geturlcabecera = "http://localhost:1839/Service/";
+        function vercotizacion()
+        {
+            window.showModalDialog("Cotizador/WebForm1.aspx?CodCampo=" + $('#hfcodcampo').val()+"&CoResponsable="+@WebSecurity.CurrentUserId.ToString(), "name", "dialogWidth:855px;dialogHeight:750px");
+        }
+
         $(document).ready(function () {
             $('#txtfecha').kendoDateTimePicker().data("kendoDateTimePicker");
             $('#gvServicios').kendoGrid({
@@ -312,6 +321,7 @@
                             success: function (data) {
 
                                 alert("Datos grabados");
+                                $('#btncotizar').show();
                                 return false;
                             },
                             error: function (xhr) {
@@ -319,6 +329,7 @@
                             }
                         });
                         //alert("Datos grabados");
+
                         return false;
                     },
                     error: function (xhr) {
