@@ -50,3 +50,29 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimie
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll.config
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Entity.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Web.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb

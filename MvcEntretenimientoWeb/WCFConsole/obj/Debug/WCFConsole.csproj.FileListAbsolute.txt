@@ -12,3 +12,17 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimie
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\obj\Debug\WCFConsole.dll
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\obj\Debug\WCFConsole.pdb
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\WCFConsole.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\WCFConsole.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\BEEntities.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\DAEntretenimiento.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\Microsoft.Practices.Unity.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\Microsoft.Practices.Unity.Interception.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\MySql.Data.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\BEEntities.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\bin\DAEntretenimiento.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\obj\Debug\WCFConsole.csprojResolveAssemblyReference.cache
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\obj\Debug\WCFConsole.dll
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\WCFConsole\obj\Debug\WCFConsole.pdb

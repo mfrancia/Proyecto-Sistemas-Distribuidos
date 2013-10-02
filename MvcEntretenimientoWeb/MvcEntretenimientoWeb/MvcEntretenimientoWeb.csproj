@@ -196,12 +196,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegistroCampoController.cs" />
-    <Compile Include="Cotizador\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Cotizador\Cotizador.aspx.cs">
+      <DependentUpon>Cotizador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cotizador\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Cotizador\Cotizador.aspx.designer.cs">
+      <DependentUpon>Cotizador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -218,6 +218,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Motor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -285,7 +290,7 @@
     <Content Include="Content\BlueOpal\sprite%402x.png" />
     <Content Include="Content\BlueOpal\sprite.png" />
     <Content Include="Content\boot-business.css" />
-    <Content Include="Cotizador\WebForm1.aspx" />
+    <Content Include="Cotizador\Cotizador.aspx" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="Content\Default\editor.png" />
     <Content Include="Content\Default\imagebrowser.png" />
@@ -389,6 +394,22 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_highlight-hard_100_dbdcdb_1x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_highlight-soft_100_e4e642_1x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_highlight-soft_100_ffffff_1x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_highlight-soft_65_27aac5_1x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-icons_27aac5_256x240.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts_Jquery\jquerylogin\jquery-ui-1.8.23.custom.css" />
+    <Content Include="Scripts_Jquery\Menu_new.css" />
     <Content Include="Service References\ServiceReference1\MvcEntretenimientoWeb.ServiceReference1.BEClub.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -398,6 +419,7 @@
     <Content Include="Service References\ServiceReference1\MvcEntretenimientoWeb.ServiceReference1.BEServicio.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Scripts_Jquery\jquerylogin\images\Thumbs.db" />
     <None Include="Service References\ServiceReference1\ServiceEntretenimiento.disco" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
@@ -458,6 +480,17 @@
     <None Include="Service References\ServiceReference1\ServiceEntretenimiento2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Web References\Motor\cotizacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\Motor\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\Motor\ServicioMotorCalculo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\Motor\ServicioMotorCalculoService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\App_Data\" />
@@ -491,6 +524,19 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
   </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8088/MotorCalculo/ServicioMotorCalculo%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Motor\</RelPath>
+      <UpdateFromURL>http://localhost:8088/MotorCalculo/ServicioMotorCalculo%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MvcEntretenimientoWeb_Motor_ServicioMotorCalculoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -507,7 +553,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>27589</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:35945/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

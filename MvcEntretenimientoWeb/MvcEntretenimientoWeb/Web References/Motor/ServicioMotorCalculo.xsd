@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicio/" targetNamespace="http://servicio/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getCotizacion" type="tns:getCotizacion" />
+  <xs:element name="getCotizacionResponse" type="tns:getCotizacionResponse" />
+  <xs:complexType name="getCotizacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sCodDiaCampo" type="xs:string" />
+      <xs:element minOccurs="0" name="sCodResponsable" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCotizacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:cotizacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cotizacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AJuegos" nillable="true" type="tns:juegos" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AServicios" nillable="true" type="tns:servicios" />
+      <xs:element minOccurs="0" name="afiliado" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="costoTotal" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRecepcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaSolicitud" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="nroOperacion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="juegos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="importe" type="xs:string" />
+      <xs:element minOccurs="0" name="juego" type="xs:string" />
+      <xs:element minOccurs="0" name="numero" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroPersonas" type="xs:string" />
+      <xs:element minOccurs="0" name="precioPorPersona" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="servicios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="importe" type="xs:string" />
+      <xs:element minOccurs="0" name="numero" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroPersonas" type="xs:string" />
+      <xs:element minOccurs="0" name="precioPorPersona" type="xs:string" />
+      <xs:element minOccurs="0" name="servicio" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

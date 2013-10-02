@@ -183,11 +183,15 @@
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/kendo")
+    
+
+
     <script>
         var Geturlcabecera = "http://localhost:1839/Service/";
         function vercotizacion()
-        {
-            window.showModalDialog("Cotizador/WebForm1.aspx?CodCampo=" + $('#hfcodcampo').val()+"&CoResponsable="+@WebSecurity.CurrentUserId.ToString(), "name", "dialogWidth:855px;dialogHeight:750px");
+        {         
+
+          window.showModalDialog("Cotizador/Cotizador.aspx?CodCampo=" + $('#hfcodcampo').val()+"&CoResponsable="+@WebSecurity.CurrentUserId.ToString(), "name", "dialogWidth:855px;dialogHeight:750px");
         }
 
         $(document).ready(function () {

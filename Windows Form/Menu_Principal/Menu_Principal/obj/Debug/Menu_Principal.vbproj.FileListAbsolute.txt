@@ -4,3 +4,6 @@ C:\Users\Francia\Desktop\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Me
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.exe
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.xml
 C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.pdb
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.exe
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.xml
+E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.pdb
