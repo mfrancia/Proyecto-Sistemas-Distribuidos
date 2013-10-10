@@ -66,6 +66,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -85,6 +86,13 @@
       <DependentUpon>Banner.vb</DependentUpon>
     </Compile>
     <Compile Include="Banner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones Del Sistema\BEOferta.vb" />
+    <Compile Include="Configuraciones Del Sistema\Ofertas.Designer.vb">
+      <DependentUpon>Ofertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones Del Sistema\Ofertas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Control Solicitud Dia Campo\Aprobar Solicitud\Aprobar_Solicitud.designer.vb">
@@ -127,6 +135,9 @@
     <EmbeddedResource Include="Banner.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Banner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones Del Sistema\Ofertas.resx">
+      <DependentUpon>Ofertas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control Solicitud Dia Campo\Aprobar Solicitud\Aprobar_Solicitud.resx">
       <DependentUpon>Aprobar_Solicitud.vb</DependentUpon>
@@ -198,7 +209,6 @@
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configuraciones Del Sistema\" />
     <Folder Include="Control Solicitud Dia Campo\Planillas - Documentos\" />
     <Folder Include="Reportes\" />
   </ItemGroup>

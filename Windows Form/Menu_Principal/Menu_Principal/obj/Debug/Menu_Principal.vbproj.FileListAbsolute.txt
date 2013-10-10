@@ -7,3 +7,16 @@ C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Me
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.exe
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.xml
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\bin\Debug\Menu_Principal.exe
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\bin\Debug\Menu_Principal.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\bin\Debug\Menu_Principal.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\bin\Debug\MySql.Data.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\bin\Debug\MySQLDriverCS.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.vbprojResolveAssemblyReference.cache
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Banner.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Ofertas.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Aprobar_Solicitud.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Login.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Form1.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.Resources.resources
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\Windows Form\Menu_Principal\Menu_Principal\obj\Debug\Menu_Principal.vbproj.GenerateResource.Cache

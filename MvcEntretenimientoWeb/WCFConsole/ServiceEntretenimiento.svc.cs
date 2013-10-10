@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Messaging;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
@@ -70,6 +71,39 @@ namespace WCFConsole
           IDAMaestros dacampo = container.Resolve<IDAMaestros>();
 
           return dacampo.LeerServicios();
+      }
+      
+      [OperationContract]
+      public List<BEOferta> ReceiveOferta()
+      {
+          container.RegisterType<IDAMaestros, DAMaestros>();
+          IDAMaestros damaestro = container.Resolve<IDAMaestros>();
+          try
+          {
+              string path = @".\private$\mfrancia";
+              if (!MessageQueue.Exists(path))
+              {
+                  MessageQueue.Create(path);
+              }
+              MessageQueue cola = new MessageQueue(path);
+              cola.Formatter = new XmlMessageFormatter(new Type[] { typeof(BEOferta) });
+              Message mensaje = cola.Receive(new TimeSpan(0,0,0,5));
+              BEOferta oferta = (BEOferta)mensaje.Body;
+              BEOferta ofertaBD = new BEOferta();
+             
+              if (oferta != null)
+              {
+                  ofertaBD = damaestro.RegistrarOferta(oferta);
+              }
+
+          }
+          catch (Exception ex)
+          {
+              return damaestro.LeerOfertas();
+              
+          }
+         
+          return damaestro.LeerOfertas();
       }
 
     }

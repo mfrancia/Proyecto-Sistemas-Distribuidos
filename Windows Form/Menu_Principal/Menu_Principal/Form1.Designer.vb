@@ -19,30 +19,31 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.RegistroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RegResponsablelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.UsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
-        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.MantenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.Menu_Aprobar_Solictud = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator
-        Me.Menu_Mantenimiento_Club = New System.Windows.Forms.ToolStripMenuItem
-        Me.EntretenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.JuegosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.BuscaminasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CalculadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.lb_usuario = New System.Windows.Forms.Label
-        Me.lbfecha = New System.Windows.Forms.Label
-        Me.lbhora = New System.Windows.Forms.Label
+        Me.components = New System.ComponentModel.Container()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.RegistroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegResponsablelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MantenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu_Aprobar_Solictud = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Menu_Mantenimiento_Club = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EntretenimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JuegosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscaminasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalculadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lb_usuario = New System.Windows.Forms.Label()
+        Me.lbfecha = New System.Windows.Forms.Label()
+        Me.lbhora = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.OfertasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -60,102 +61,102 @@ Partial Class Form1
         '
         Me.RegistroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SadToolStripMenuItem, Me.RegResponsablelToolStripMenuItem, Me.ToolStripMenuItem1, Me.EmpresaToolStripMenuItem, Me.UsuarioToolStripMenuItem})
         Me.RegistroToolStripMenuItem.Name = "RegistroToolStripMenuItem"
-        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.RegistroToolStripMenuItem.Text = "Registro"
         '
         'SadToolStripMenuItem
         '
         Me.SadToolStripMenuItem.Name = "SadToolStripMenuItem"
-        Me.SadToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.SadToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.SadToolStripMenuItem.Text = "Club's"
         '
         'RegResponsablelToolStripMenuItem
         '
         Me.RegResponsablelToolStripMenuItem.Image = Global.Menu_Principal.My.Resources.Resources.POINT06
         Me.RegResponsablelToolStripMenuItem.Name = "RegResponsablelToolStripMenuItem"
-        Me.RegResponsablelToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.RegResponsablelToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.RegResponsablelToolStripMenuItem.Text = "Responsable de Familia"
-        '
-        'UsuarioToolStripMenuItem
-        '
-        Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
-        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.UsuarioToolStripMenuItem.Text = "Usuario"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(193, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(194, 6)
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        '
+        'UsuarioToolStripMenuItem
+        '
+        Me.UsuarioToolStripMenuItem.Name = "UsuarioToolStripMenuItem"
+        Me.UsuarioToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.UsuarioToolStripMenuItem.Text = "Usuario"
         '
         'ConsultasToolStripMenuItem
         '
         Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonalToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
-        Me.ConsultasToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.ConsultasToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.ConsultasToolStripMenuItem.Text = "Consultas"
         '
         'PersonalToolStripMenuItem
         '
         Me.PersonalToolStripMenuItem.Image = Global.Menu_Principal.My.Resources.Resources.POINT06
         Me.PersonalToolStripMenuItem.Name = "PersonalToolStripMenuItem"
-        Me.PersonalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PersonalToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.PersonalToolStripMenuItem.Text = "Dia de Campo"
         '
         'MantenimientoToolStripMenuItem
         '
-        Me.MantenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Menu_Aprobar_Solictud, Me.ToolStripMenuItem2, Me.Menu_Mantenimiento_Club})
+        Me.MantenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Menu_Aprobar_Solictud, Me.ToolStripMenuItem2, Me.Menu_Mantenimiento_Club, Me.OfertasToolStripMenuItem})
         Me.MantenimientoToolStripMenuItem.Name = "MantenimientoToolStripMenuItem"
-        Me.MantenimientoToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
+        Me.MantenimientoToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
         Me.MantenimientoToolStripMenuItem.Text = "Mantenimiento"
         '
         'Menu_Aprobar_Solictud
         '
         Me.Menu_Aprobar_Solictud.Image = Global.Menu_Principal.My.Resources.Resources.POINT06
         Me.Menu_Aprobar_Solictud.Name = "Menu_Aprobar_Solictud"
-        Me.Menu_Aprobar_Solictud.Size = New System.Drawing.Size(222, 22)
+        Me.Menu_Aprobar_Solictud.Size = New System.Drawing.Size(227, 22)
         Me.Menu_Aprobar_Solictud.Text = "Aprobar Solicitud de Clientes"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(219, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(224, 6)
         '
         'Menu_Mantenimiento_Club
         '
         Me.Menu_Mantenimiento_Club.Name = "Menu_Mantenimiento_Club"
-        Me.Menu_Mantenimiento_Club.Size = New System.Drawing.Size(222, 22)
+        Me.Menu_Mantenimiento_Club.Size = New System.Drawing.Size(227, 22)
         Me.Menu_Mantenimiento_Club.Text = "Club's"
         '
         'EntretenimientoToolStripMenuItem
         '
         Me.EntretenimientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.JuegosToolStripMenuItem, Me.CalculadoraToolStripMenuItem})
         Me.EntretenimientoToolStripMenuItem.Name = "EntretenimientoToolStripMenuItem"
-        Me.EntretenimientoToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.EntretenimientoToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
         Me.EntretenimientoToolStripMenuItem.Text = "Entretenimiento"
         '
         'JuegosToolStripMenuItem
         '
         Me.JuegosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BuscaminasToolStripMenuItem})
         Me.JuegosToolStripMenuItem.Name = "JuegosToolStripMenuItem"
-        Me.JuegosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.JuegosToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.JuegosToolStripMenuItem.Text = "Juegos"
         '
         'BuscaminasToolStripMenuItem
         '
         Me.BuscaminasToolStripMenuItem.Name = "BuscaminasToolStripMenuItem"
-        Me.BuscaminasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BuscaminasToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.BuscaminasToolStripMenuItem.Text = "Buscaminas"
         '
         'CalculadoraToolStripMenuItem
         '
         Me.CalculadoraToolStripMenuItem.Name = "CalculadoraToolStripMenuItem"
-        Me.CalculadoraToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CalculadoraToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.CalculadoraToolStripMenuItem.Text = "Calculadora"
         '
         'Panel1
@@ -211,6 +212,12 @@ Partial Class Form1
         '
         Me.Timer1.Enabled = True
         '
+        'OfertasToolStripMenuItem
+        '
+        Me.OfertasToolStripMenuItem.Name = "OfertasToolStripMenuItem"
+        Me.OfertasToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.OfertasToolStripMenuItem.Text = "Ofertas"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -258,5 +265,6 @@ Partial Class Form1
     Friend WithEvents EmpresaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents lb_usuario As System.Windows.Forms.Label
+    Friend WithEvents OfertasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

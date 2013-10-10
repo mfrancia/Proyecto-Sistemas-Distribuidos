@@ -12,5 +12,7 @@ namespace DAEntretenimiento
         List<BEJuego> LeerJuegos();
         List<BEClub> LeerClubs();
         List<BEServicio> LeerServicios();
+        BEEntities.BEOferta RegistrarOferta(BEEntities.BEOferta beoferta);
+        List<BEEntities.BEOferta> LeerOfertas();
     }
 }

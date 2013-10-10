@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BEClub.cs" />
     <Compile Include="BEJuego.cs" />
+    <Compile Include="BEOferta.cs" />
     <Compile Include="BEServicio.cs" />
     <Compile Include="BEServicioCampo.cs" />
     <Compile Include="BESolicitudCampo.cs" />

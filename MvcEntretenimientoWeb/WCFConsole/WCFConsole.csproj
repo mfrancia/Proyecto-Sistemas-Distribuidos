@@ -57,6 +57,7 @@
       <HintPath>Assemblies\Microsoft.Practices.Unity.Interception.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.ServiceModel.Routing" />
     <Reference Include="System.Web.DynamicData" />
