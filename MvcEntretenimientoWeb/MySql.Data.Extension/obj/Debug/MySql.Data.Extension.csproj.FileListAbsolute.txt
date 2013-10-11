@@ -24,32 +24,6 @@ C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\MySql.Data.Exten
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll.config
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Entity.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Web.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll.config
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.pdb
@@ -76,3 +50,29 @@ E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribui
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll.config
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Data.Entity.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\MySql.Web.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\EntityFramework.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Helpers.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.Razor.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.Data.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\bin\Debug\WebMatrix.WebData.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.csprojResolveAssemblyReference.cache
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\MySql.Data.Extension\obj\Debug\MySql.Data.Extension.pdb

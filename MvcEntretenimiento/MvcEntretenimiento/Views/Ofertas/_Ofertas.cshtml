@@ -1,0 +1,13 @@
+﻿
+
+ @foreach (var item in ViewBag.Ofertas)
+{
+    <div data-role="collapsible" id="myc">
+        <h3>@item.Nombre</h3>
+        <p>
+            @item.Descripcion <br />
+            @item.FechaInicio <br />
+            @item.FechaCaducidad <br />
+        </p>
+    </div>		 
+}

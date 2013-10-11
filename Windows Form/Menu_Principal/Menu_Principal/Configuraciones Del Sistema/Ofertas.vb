@@ -25,5 +25,7 @@ Public Class Ofertas
         mensaje.Label = "Nueva Oferta"
         mensaje.Body = oferta
         cola.Send(mensaje)
+        MessageBox.Show("Oferta creada", "Confirmacion", MessageBoxButtons.OK)
+
     End Sub
 End Class

@@ -1,10 +1,9 @@
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.csprojResolveAssemblyReference.cache
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.pdb
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.dll
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.pdb
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.csprojResolveAssemblyReference.cache
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.dll
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\bin\Debug\BEEntities.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\BEEntities\obj\Debug\BEEntities.pdb

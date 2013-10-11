@@ -14,6 +14,11 @@ namespace MvcEntretenimiento.Controllers
 
         public ActionResult Index()
         {
+            localhost.ServiceEntretenimiento service = new localhost.ServiceEntretenimiento();
+            var oferta = service.ReceiveOferta();
+
+            ViewBag.Ofertas = oferta;
+
             return View();
         }
 
@@ -21,7 +26,10 @@ namespace MvcEntretenimiento.Controllers
         {
             localhost.ServiceEntretenimiento service = new localhost.ServiceEntretenimiento();
             var oferta = service.ReceiveOferta();
-            return Json(oferta, JsonRequestBehavior.AllowGet);
+
+            ViewBag.Ofertas = oferta;
+
+            return PartialView("_Ofertas");
         }
 
     }

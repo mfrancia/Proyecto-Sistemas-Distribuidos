@@ -1,40 +1,30 @@
 ﻿@{
     ViewBag.Title = "Index";
+    
 }
 
-<ul data-role="listview" data-inset="true"  id="lwofertas">
-</ul>
-
+@Html.Partial("_Ofertas")
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryui")
-    @Scripts.Render("~/bundles/jqueryval")
- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-
     <script>
-
         $(document).ready(function () {
             var timer, delay = 10000;
-            timer = setInterval(function(){
-            $.ajax({
-                type: "GET",
-                url: "/Ofertas/GetOfertas",
+            timer = setInterval(function () {
 
-                success: function (data) {
-                    $('#lwofertas').empty();
-                    ofertas = data;
-                    $.each(ofertas, function (index, newoferta) {
-                        $('#lwofertas').append('<li>Nombre:<span> ' + newoferta.Nombre + '</span></li>');
-                        $('#lwofertas').append('<li>Descripcion:<span> ' + newoferta.Descripcion + '</span></li>');
-                        $('#lwofertas').append('<li>Fecha Inicio:<span> ' + newoferta.FechaInicio + '</span></li>');
-                        $('#lwofertas').append('<li>Fecha Caducidad:<span> ' + newoferta.FechaCaducidad + '</span></li>');
-                    });
-                  
-                    $('#lwofertas').listview('refresh');
-                }
-            });
+                $.mobile.changePage(window.location.href, {
+
+                    allowSamePageTransition: true,
+                    transition: 'none',
+                    reloadPage: true
+
+                });
+
+                //$.get('/ofertas/GetOfertas', {}, function (data) {
+                //    //$('#contenedorofertas').html(data);
+                //    //$('#myc').collapsible({ refresh: true });
+                //    $('<div data-role="collapsible"><h3>wwerwerwerwe</h3><p>oferta imperdible kkkkk <br /></p></div>').appendTo('[data-role="content"]').page();
+                //})
+
             }, delay);
         });
     </script>

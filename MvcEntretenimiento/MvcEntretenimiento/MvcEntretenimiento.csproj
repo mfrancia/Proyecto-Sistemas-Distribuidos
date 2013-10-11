@@ -266,6 +266,7 @@
     <Content Include="Web References\localhost\BEServicio.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
+    <Content Include="Views\Ofertas\_Ofertas.cshtml" />
     <None Include="Web References\localhost\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

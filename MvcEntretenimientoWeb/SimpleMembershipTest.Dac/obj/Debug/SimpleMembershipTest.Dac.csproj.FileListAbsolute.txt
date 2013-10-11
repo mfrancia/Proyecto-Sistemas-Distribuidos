@@ -14,22 +14,6 @@ C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\SimpleMembership
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe.config
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe
 C:\Users\Francia\Downloads\MySqlSimpleMembershipProvider-master\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.exe
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe.config
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.exe
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\EntityFramework.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Entity.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Extension.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.Extension.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Extension.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.Extension.pdb
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\EntityFramework.xml
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\ko\MySql.Web.Extension.resources.dll
-C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.csprojResolveAssemblyReference.cache
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe.config
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.pdb
@@ -46,3 +30,19 @@ E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribui
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.csprojResolveAssemblyReference.cache
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.exe
 E:\UPC\Distribuidos\Proyectos\Entretenimiento online\Proyecto-Sistemas-Distribuidos\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe.config
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.exe
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\SimpleMembershipTest.Dac.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\EntityFramework.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Entity.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.Extension.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Data.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\MySql.Web.Extension.pdb
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\EntityFramework.xml
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\bin\Debug\ko\MySql.Web.Extension.resources.dll
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.csprojResolveAssemblyReference.cache
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.exe
+C:\Users\Francia\Documents\GitHub\Proyecto-Sistemas-Distribuidos\MvcEntretenimientoWeb\SimpleMembershipTest.Dac\obj\Debug\SimpleMembershipTest.Dac.pdb
